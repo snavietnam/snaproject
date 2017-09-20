@@ -4,11 +4,11 @@
       <div class="left-sidebar" id="show-nav">
         <ul id="side" class="side-nav">
           <li class="panel">
-            <a id="panel1" href="javascript:;" data-toggle="collapse" data-target="#Dashboard"> <i class="fa fa-dashboard"></i> Staff
+            <a id="panel1" href="javascript:;" data-toggle="collapse" data-target="#Dashboard"> <i class="fa fa-address-book-o"></i> Employee
               <i class="fa fa-chevron-left pull-right" id="arow1"></i> </a>
             <ul class="collapse nav" id="Dashboard">
-              <li> <a href="stafflist/"><i class="fa fa-angle-double-right"></i> Staff list</a> </li>
-              <li> <a href="salarylist/"><i class="fa fa-angle-double-right"></i> Staff salary</a> </li>
+              <li> <a href="stafflist/"><i class="fa fa-angle-double-right"></i> List of employees</a> </li>
+              <li> <a href="salarylist/"><i class="fa fa-angle-double-right"></i> Salary table</a> </li>
             </ul>
           </li>
 		  <li class="panel">
@@ -27,37 +27,37 @@
             </ul>
           </li>
           <li class="panel">
-            <a id="panel3" href="javascript:;" data-toggle="collapse" data-target="#calendar"> <i class="fa fa-calendar"></i> Money in & out
+            <a id="panel3" href="javascript:;" data-toggle="collapse" data-target="#calendar"> <i class="fa fa-list-alt"></i> Invoices
               <i class="fa fa-chevron-left pull-right" id="arow3"></i> </a>
             <ul class="collapse nav" id="calendar">
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> invoices in</a> </li>
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> invoices out</a> </li>
+              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Input invoice</a> </li>
+              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Output invoice</a> </li>
             </ul>
           </li>
           <li class="panel">
-            <a id="panel4" href="javascript:;" data-toggle="collapse" data-target="#clipboard"> <i class="fa fa-clipboard"></i> statistic
+            <a id="panel4" href="javascript:;" data-toggle="collapse" data-target="#clipboard"> <i class="fa fa-clipboard"></i> Budget
               <i class="fa fa fa-chevron-left pull-right" id="arow4"></i> </a>
             <ul class="collapse nav" id="clipboard">
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> EXPENSES</a> </li>
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> EXPENSES Detail</a> </li>
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> EXPENSES Detail</a> </li>
+              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Salary & Insurance</a> </li>
+              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Expenses</a> </li>
+              
             </ul>
           </li>
           
           <li class="panel">
-            <a id="panel6" href="javascript:;" data-toggle="collapse" data-target="#inbox"> <i class="fa fa-inbox"></i> inbox
+            <a id="panel6" href="javascript:;" data-toggle="collapse" data-target="#inbox"> <i class="fa fa-inbox"></i> Daily cash flow
               <span class="label label-primary">new msz</span> <i class="fa fa fa-chevron-left pull-right" id="arow6"></i> </a>
             <ul class="collapse nav" id="inbox">
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Flot Charts</a> </li>
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Morris.js</a> </li>
+              <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Statistics</a> </li>
+              
             </ul>
           </li>
           <li class="panel">
             <a id="panel7" href="javascript:;" data-toggle="collapse" data-target="#cogs"> <i class="fa fa-cogs"></i> cogs
-              <span class="label label-warning">Warning</span> <i class="fa fa fa-chevron-left pull-right" id="arow7"></i> </a>
+               Sale Forecast</i> </a>
             <ul class="collapse nav" id="cogs">
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Flot Charts</a> </li>
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Morris.js</a> </li>
+              <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Statistics</a> </li>
+              
             </ul>
           </li>
 
