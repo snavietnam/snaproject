@@ -26,14 +26,6 @@
               <li> <a href="project"><i class="fa fa-angle-double-right"></i> List of projects</a> </li>
             </ul>
           </li>
-		  <li class="panel">
-            <a id="panel9" href="javascript:;" data-toggle="collapse" data-target="#expenses"> <i class="fa fa-th-large"></i> Expenses
-              <i class="fa fa-chevron-left pull-right" id="arow9"></i> </a>
-            <ul class="collapse nav" id="expenses">
-              <li> <a href="expensescategory/"><i class="fa fa-angle-double-right"></i>Expenses Category</a> </li>
-              <li> <a href="expensestype/"><i class="fa fa-angle-double-right"></i>Expenses Types</a> </li>
-            </ul>
-          </li>
           <li class="panel">
             <a id="panel3" href="javascript:;" data-toggle="collapse" data-target="#calendar"> <i class="fa fa-list-alt"></i> Invoices
               <i class="fa fa-chevron-left pull-right" id="arow3"></i> </a>
