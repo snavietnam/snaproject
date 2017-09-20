@@ -20,10 +20,10 @@
             </ul>
           </li>
           <li class="panel">
-            <a id="panel2" href="javascript:;" data-toggle="collapse" data-target="#charts"> <i class="fa fa-bar-chart-o"></i> Project
+            <a id="panel2" href="javascript:;" data-toggle="collapse" data-target="#charts"> <i class="fa fa-th-large"></i> Project
               <i class="fa fa-chevron-left pull-right" id="arow2"></i> </a>
             <ul class="collapse nav" id="charts">
-              <li> <a href="project"><i class="fa fa-angle-double-right"></i> Project list</a> </li>
+              <li> <a href="project"><i class="fa fa-angle-double-right"></i> List of projects</a> </li>
             </ul>
           </li>
           <li class="panel">
@@ -35,7 +35,7 @@
             </ul>
           </li>
           <li class="panel">
-            <a id="panel4" href="javascript:;" data-toggle="collapse" data-target="#clipboard"> <i class="fa fa-clipboard"></i> Budget
+            <a id="panel4" href="javascript:;" data-toggle="collapse" data-target="#clipboard"> <i class="fa fa-bar-chart"></i> Budget
               <i class="fa fa fa-chevron-left pull-right" id="arow4"></i> </a>
             <ul class="collapse nav" id="clipboard">
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> Salary & Insurance</a> </li>
@@ -48,16 +48,21 @@
             <a id="panel6" href="javascript:;" data-toggle="collapse" data-target="#inbox"> <i class="fa fa-inbox"></i> Daily cash flow
                <i class="fa fa fa-chevron-left pull-right" id="arow6"></i> </a>
             <ul class="collapse nav" id="inbox">
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Flot Charts</a> </li>
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Morris.js</a> </li>
+              <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li>
+             
             </ul>
           </li>
           <li class="panel">
-            <a id="panel7" href="javascript:;" data-toggle="collapse" data-target="#cogs"> <i class="fa fa-cogs"></i> cogs
-              <span class="label label-warning">Warning</span> <i class="fa fa fa-chevron-left pull-right" id="arow7"></i> </a>
+            <a id="panel7" href="javascript:;" data-toggle="collapse" data-target="#cogs"> <i class="fa fa-cogs"></i> Sale Forecast
+              <i class="fa fa fa-chevron-left pull-right" id="arow7"></i> </a>
             <ul class="collapse nav" id="cogs">
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Flot Charts</a> </li>
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Morris.js</a> </li>
+              <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li></ul></li>
+              <li class="panel">
+            <a id="panel8" href="javascript:;" data-toggle="collapse" data-target="#profit"> <i class="fa fa-cogs"></i> Profit
+              <i class="fa fa fa-chevron-left pull-right" id="arow8"></i> </a>
+            <ul class="collapse nav" id="#profit">
+              <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li>
+              
             </ul>
           </li>
 
