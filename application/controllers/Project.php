@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Stafflist extends MY_Controller {
+class Project extends MY_Controller {
 	function __construct(){
 			parent::__construct();
 			$this->load->model('Staff_model');
@@ -53,29 +53,6 @@ class Stafflist extends MY_Controller {
 		$input['where'] = array('id' => $id);
 		$this->data['staffdetail'] = $this->Staff_model->get_row($input);
 		$this->data['stafftype'] = $this->Staff_type_model->get_list();
-		 if($this->input->post())
-        {
-			$data = array(
-                    'id_type'    => $this->input->post('id_type'),
-                    'name'       => $this->input->post('name'),
-                    'email'      => $this->input->post('email'),
-                    'birth'      => $this->input->post('birth'),
-                    'startworkingdate' => $this->input->post('startworkingdate'),
-                    'position' 	 => $this->input->post('position'),					
-                    'startingsalary'=> $this->input->post('startingsalary'),					
-                    'description' 	=> $this->input->post('description'),					
-                ); 
-                //them moi vao csdl
-                if($this->Staff_model->update($id,$data))
-                {
-                    //tạo ra nội dung thông báo
-                    $this->session->set_flashdata('message', 'updates dữ liệu thành công');
-                }else{
-                    $this->session->set_flashdata('message', 'Không updates được');
-                }
-                //chuyen tới trang danh sách
-                redirect(base_url('stafflist'));
-		}
 		$this->data['temp'] = 'main.php';
 		$this->data['tempcon'] = 'staff/edit.php';
 		$this->load->view('index',$this->data);

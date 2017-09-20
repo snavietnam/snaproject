@@ -50,15 +50,15 @@
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
-						  <form role="form">
+						  <form role="form" action="stafflist/edit/<?php echo  $staffdetail->id ?>" method="POST">
 							<!-- text input -->
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
-							  <input type="text" class="form-control" id="inputSuccess" value="<?php echo $staffdetail->name ?>" placeholder="Enter ...">
+							  <input type="text" class="form-control" name="name" id="inputSuccess" value="<?php echo $staffdetail->name ?>" placeholder="Enter ...">
 							</div>
 							<div class="form-group">
 							  <label>Staff type</label>
-							  <select class="form-control">
+							  <select name="id_type" class="form-control">
 							  <?php foreach($stafftype as $row){ ?>
 								<option <?php if($row->id == $staffdetail->id_type) echo 'selected' ?>><?php echo $row->name ?></option>
 							  <?php } ?>
@@ -66,33 +66,33 @@
 							</div>
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Position</label>
-							  <input type="text" class="form-control" id="inputSuccess" value="<?php echo $staffdetail->position ?>" placeholder="Enter ...">
+							  <input type="text" class="form-control" name="position" id="inputSuccess" value="<?php echo $staffdetail->position ?>" placeholder="Enter ...">
 							  <span class="help-block">position on company</span>
 							</div>
 							<div class="form-group">
 							  <label>Email</label>
-							  <input type="email" class="form-control" value="<?php echo $staffdetail->email ?>" placeholder="Email ..." >
+							  <input type="email" class="form-control"  name="email" value="<?php echo $staffdetail->email ?>" placeholder="Email ..." >
 							   <span class="help-block">ex:sna@global.net</span>
 							</div>
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Start working date</label>
-							  <input type="text" class="form-control" id="inputSuccess" value="<?php echo $staffdetail->startworkingdate ?>" placeholder="Enter ...">
+							  <input type="text" class="form-control" name="startworkingdate" id="inputSuccess" value="<?php echo $staffdetail->startworkingdate ?>" placeholder="Enter ...">
 							  <span class="help-block">yyyy/mm/dd or yyyy-mm-dd</span>
 							</div>
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Birthday</label>
-							  <input type="text" class="form-control" id="inputSuccess" value="<?php echo $staffdetail->birth ?>" placeholder="Enter ...">
+							  <input type="text" class="form-control" name="birth" id="inputSuccess" value="<?php echo $staffdetail->birth ?>" placeholder="Enter ...">
 							  <span class="help-block">yyyy/mm/dd or yyyy-mm-dd</span>
 							</div>
 							<div class="form-group has-warning">
 							  <label class="control-label" for="inputWarning"><i class="fa fa-bell-o"></i>Starting Salary </label>
-							  <input type="text" class="form-control" id="inputWarning" value="<?php echo $staffdetail->startingsalary ?>" placeholder="Enter ...">
+							  <input type="text" class="form-control" name="startingsalary" id="inputWarning" value="<?php echo $staffdetail->startingsalary ?>" placeholder="Enter ...">
 							  <span class="help-block">Salary</span>
 							</div>
 							<!-- textarea -->
 							<div class="form-group">
 							  <label>Description</label>
-							  <textarea class="form-control" rows="3" value="" placeholder="Enter ..."><?php echo $staffdetail->description ?></textarea>
+							  <textarea class="form-control" name="description" rows="3" value="" placeholder="Enter ..."><?php echo $staffdetail->description ?></textarea>
 							</div>
 
 							<div class="form-group">

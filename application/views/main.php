@@ -7,15 +7,23 @@
             <a id="panel1" href="javascript:;" data-toggle="collapse" data-target="#Dashboard"> <i class="fa fa-dashboard"></i> Staff
               <i class="fa fa-chevron-left pull-right" id="arow1"></i> </a>
             <ul class="collapse nav" id="Dashboard">
-              <li> <a href="stafflist"><i class="fa fa-angle-double-right"></i> Staff list</a> </li>
-              <li> <a href="salarylist"><i class="fa fa-angle-double-right"></i> Staff salary</a> </li>
+              <li> <a href="stafflist/"><i class="fa fa-angle-double-right"></i> Staff list</a> </li>
+              <li> <a href="salarylist/"><i class="fa fa-angle-double-right"></i> Staff salary</a> </li>
+            </ul>
+          </li>
+		  <li class="panel">
+            <a id="panel5" href="javascript:;" data-toggle="collapse" data-target="#edit"> <i class="fa fa-edit"></i> Customer
+              <i class="fa fa fa-chevron-left pull-right" id="arow5"></i>
+            </a>
+            <ul class="collapse nav" id="edit">
+              <li> <a href="customer/"><i class="fa fa-angle-double-right"></i> Customer list</a> </li>
             </ul>
           </li>
           <li class="panel">
             <a id="panel2" href="javascript:;" data-toggle="collapse" data-target="#charts"> <i class="fa fa-bar-chart-o"></i> Project
               <i class="fa fa-chevron-left pull-right" id="arow2"></i> </a>
             <ul class="collapse nav" id="charts">
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Project list</a> </li>
+              <li> <a href="project"><i class="fa fa-angle-double-right"></i> Project list</a> </li>
             </ul>
           </li>
           <li class="panel">
@@ -35,15 +43,7 @@
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> EXPENSES Detail</a> </li>
             </ul>
           </li>
-          <li class="panel">
-            <a id="panel5" href="javascript:;" data-toggle="collapse" data-target="#edit"> <i class="fa fa-edit"></i> edit
-              <i class="fa fa fa-chevron-left pull-right" id="arow5"></i>
-            </a>
-            <ul class="collapse nav" id="edit">
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Flot Charts</a> </li>
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Morris.js</a> </li>
-            </ul>
-          </li>
+          
           <li class="panel">
             <a id="panel6" href="javascript:;" data-toggle="collapse" data-target="#inbox"> <i class="fa fa-inbox"></i> inbox
               <span class="label label-primary">new msz</span> <i class="fa fa fa-chevron-left pull-right" id="arow6"></i> </a>
