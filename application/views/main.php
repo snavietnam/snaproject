@@ -60,7 +60,7 @@
           </li>
           
           <li class="panel">
-            <a id="panel6" href="javascript:;" data-toggle="collapse" data-target="#inbox"> <i class="fa fa-inbox"></i> Daily cash flow
+            <a id="panel6" href="javascript:;" data-toggle="collapse" data-target="#inbox"> <i class="fa fa-calendar"></i> Daily cash flow
                <i class="fa fa fa-chevron-left pull-right" id="arow6"></i> </a>
             <ul class="collapse nav" id="inbox">
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li>
@@ -68,12 +68,12 @@
             </ul>
           </li>
           <li class="panel">
-            <a id="panel7" href="javascript:;" data-toggle="collapse" data-target="#cogs"> <i class="fa fa-cogs"></i> Sale Forecast
+            <a id="panel7" href="javascript:;" data-toggle="collapse" data-target="#cogs"> <i class="fa fa-line-chart"></i> Sale Forecast
               <i class="fa fa fa-chevron-left pull-right" id="arow7"></i> </a>
             <ul class="collapse nav" id="cogs">
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li></ul></li>
               <li class="panel">
-            <a id="panel8" href="javascript:;" data-toggle="collapse" data-target="#profit"> <i class="fa fa-cogs"></i> Profit
+            <a id="panel8" href="javascript:;" data-toggle="collapse" data-target="#profit"> <i class="fa fa-money"></i> Profit
               <i class="fa fa fa-chevron-left pull-right" id="arow8"></i> </a>
             <ul class="collapse nav" id="#profit">
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li>
