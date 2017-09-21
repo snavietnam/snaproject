@@ -14,13 +14,13 @@
             <a id="panel1" href="javascript:;" data-toggle="collapse" data-target="#Dashboard"> <i class="fa fa-address-book-o"></i> Employee & Department
               <i class="fa fa-chevron-left pull-right" id="arow1"></i> </a>
             <ul class="collapse nav" id="Dashboard">
-			  <li> <a href="department/"><i class="fa fa-angle-double-right"></i> List Department</a> </li>
-              <li> <a href="stafflist/"><i class="fa fa-angle-double-right"></i> List of employees</a> </li>
-              <li> <a href="salarylist/"><i class="fa fa-angle-double-right"></i> Salary table</a> </li>
+			  <li> <a href="department/"><i class="fa fa-angle-double-right"></i>  Department List</a> </li>
+              <li> <a href="stafflist/"><i class="fa fa-angle-double-right"></i> Employee List</a> </li>
+              <li> <a href="salarylist/"><i class="fa fa-angle-double-right"></i> Salary Table</a> </li>
             </ul>
           </li>
 		  <li class="panel">
-            <a id="panel5" href="javascript:;" data-toggle="collapse" data-target="#edit"> <i class="fa fa-edit"></i> Customer
+            <a id="panel5" href="javascript:;" data-toggle="collapse" data-target="#edit"> <i class="fa fa-user-plus"></i> Customer
               <i class="fa fa fa-chevron-left pull-right" id="arow5"></i>
             </a>
             <ul class="collapse nav" id="edit">
