@@ -9,15 +9,15 @@
             <div class="col-md-8">
             <ul class="list-inline pull-right mini-stat">
 							<li>
-								<h5>LIKES <span class="stat-value color-blue"><i class="fa fa-plus-circle"></i> 81,450</span></h5>
+								<h5>YEARS <span class="stat-value color-blue"><i class="fa fa-plus-circle"></i> 81,450</span></h5>
 								
 							</li>
 							<li>
-								<h5>SUBSCRIBERS <span class="stat-value color-green"><i class="fa fa-plus-circle"></i> 150,743</span></h5>
+								<h5>CUSTOMERS <span class="stat-value color-green"><i class="fa fa-plus-circle"></i> 150,743</span></h5>
 								
 							</li>
 							<li>
-								<h5>CUSTOMERS <span class="stat-value color-orang"><i class="fa fa-plus-circle"></i> 43,748</span></h5>
+								<h5>PROJECTS <span class="stat-value color-orang"><i class="fa fa-plus-circle"></i> 43,748</span></h5>
 								
 							</li>
 						</ul>
@@ -33,7 +33,7 @@
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
-						<a href="stafflist/add"><button type="button" class="btn btn-block btn-info btn-sm">Add Employee</button></a>
+						<a href="stafflist/add"><button type="button" class="btn btn-block btn-info btn-sm">ADD EMPLOYEE</button></a>
 						</div>
 					</div>
 					<script>
@@ -57,11 +57,11 @@
 				  <table id="example2" class="table table-bordered table-striped">
 					<thead>
 					<tr>
-					  <th>Id</th>
-					  <th>Staff type</th>
+					  <th>ID</th>
 					  <th>Name</th>
 					  <th>Position</th>
-					  <th>Start working</th>
+					  <th>Start date</th>
+                      <th>Employment Status</th>
 					  <th>Birthday</th>
 					  <th width="11%" >Edit/Delete</th>
 					</tr>
@@ -70,10 +70,10 @@
 					<?php foreach($this->data['liststaff'] as $row){ ?>
 					<tr>
 					  <td><?php echo $row->id ?></td>
-					  <td><?php  if($row->id_type == 1) echo 'Full time'; else echo 'Part Time'; ?></td>
 					  <td><?php echo $row->name ?></td>
 					  <td><?php echo $row->position ?></td>
 					  <td><?php echo $row->startworkingdate ?></td>
+                      <td><?php  if($row->id_type == 1) echo 'Full time'; else echo 'Part Time'; ?></td>
 					  <td><?php echo $row->birth ?></td>
 					  <td align="center">
 						<a href="stafflist/edit/<?php echo $row->id ?>"><button type="button" class="btn btn-danger"><i class="fa fa-edit"></i></button></a>

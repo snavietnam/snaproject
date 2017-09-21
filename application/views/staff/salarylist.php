@@ -1,8 +1,8 @@
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="#"> Staff</a></li>
-						<li class="active">salary</li>
+						<li><i class="fa fa-home"></i><a href="#"> Employee</a></li>
+						<li class="active">Salary</li>
 					</ul>
             </div>
             <div class="col-md-8">
@@ -27,8 +27,8 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>SALARY</h2>
-						<em>the salary information, show by month</em>
+						<h2>SALARY TABLE</h2>
+						<em>Employee salary - viewed by month </em>
 					</div>
 					<div class="col-lg-6">
 					<form method="POST" action="">
@@ -41,7 +41,7 @@
 						</div>
 						</div>
 						<div class="col-lg-3">
-						<button id="send" type="submit" class="btn btn-default btn-block">Select</button>
+						<button id="send" type="submit" class="btn btn-block btn-info btn-sm">Select</button>
 						</div>
 					</form>
 					</div>
@@ -60,7 +60,7 @@
 			<div class="row">
 				 <div class="box">
 				<div class="box-header">
-				  <h3 class="box-title">Data Table With the salary information.</h3>
+				  
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">
@@ -69,7 +69,7 @@
 					<tr>
 					  <th>id</th>
 					  <th>name</th>
-					  <th>date</th>
+					  <th>start date</th>
 					  <th>salary</th>
 					  <th>date</th>
 					</tr>
@@ -79,7 +79,7 @@
 					<tr>
 					  <td><?php echo $row->id ?></td>
 					  <td><?php echo $row->name ?></td>
-					  <td><?php echo $row->birth ?></td>
+					  <td><?php echo $row->startworkingdate ?></td>
 					  <td><?php echo number_format($row->salary) ?> VNĐ</td>
 					  <td><?php echo $row->date ?></td>
 					</tr>

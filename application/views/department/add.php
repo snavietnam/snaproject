@@ -28,7 +28,7 @@
                 <div class="main-header">
 					<div class="col-lg-6">
 						<h2>DEPARTMENT LIST</h2>
-						<em>the department information</em>
+						<em>All departments in company</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
@@ -59,7 +59,7 @@
 							<div class="form-group">
 							  <a href="department/"><button class="btn btn-primary" type="button">Cancel</button></a>
 							  <button class="btn btn-primary" type="reset">Reset</button>
-							  <button type="submit" class="btn btn-success">Create</button>
+							  <button type="submit" class="btn btn-success">Save</button>
 							</div>
 
 						  </form>
