@@ -58,6 +58,8 @@
 	<script src="<?php echo public_url() ?>js/jquery.dataTables.js"></script>
 	<script src="<?php echo public_url() ?>js/dataTables.bootstrap.js"></script>
 	<script src="<?php echo public_url() ?>js/bootstrap-datepicker.js"></script>
+	<script src="<?php echo public_url() ?>js/jquery.inputmask.js"></script>
+	<script src="<?php echo public_url() ?>js/jquery.inputmask.date.extensions.js"></script>
 	<?php $this->load->view($temp,$this->data) ?>
  <script src="<?php echo public_url() ?>js/bootstrap.js"></script>
   <script type="text/javascript">

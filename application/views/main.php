@@ -3,6 +3,13 @@
       <!-- begin SIDE NAV USER PANEL -->
       <div class="left-sidebar" id="show-nav">
         <ul id="side" class="side-nav">
+			<li class="panel">
+            <a id="panel10" href="javascript:;" data-toggle="collapse" data-target="#department"> <i class="fa fa-address-book-o"></i> Department
+              <i class="fa fa-chevron-left pull-right" id="arow10"></i> </a>
+            <ul class="collapse nav" id="department">
+              <li> <a href="department/"><i class="fa fa-angle-double-right"></i> List Department</a> </li>
+            </ul>
+          </li>
           <li class="panel">
             <a id="panel1" href="javascript:;" data-toggle="collapse" data-target="#Dashboard"> <i class="fa fa-address-book-o"></i> Employee
               <i class="fa fa-chevron-left pull-right" id="arow1"></i> </a>
@@ -16,7 +23,7 @@
               <i class="fa fa fa-chevron-left pull-right" id="arow5"></i>
             </a>
             <ul class="collapse nav" id="edit">
-              <li> <a href="customer/"><i class="fa fa-angle-double-right"></i> List of customers</a> </li>
+              <li> <a href="customer/"><i class="fa fa-angle-double-right"></i> Customer list</a> </li>
             </ul>
           </li>
           <li class="panel">
@@ -24,6 +31,14 @@
               <i class="fa fa-chevron-left pull-right" id="arow2"></i> </a>
             <ul class="collapse nav" id="charts">
               <li> <a href="project"><i class="fa fa-angle-double-right"></i> List of projects</a> </li>
+            </ul>
+          </li>
+		  <li class="panel">
+            <a id="panel9" href="javascript:;" data-toggle="collapse" data-target="#expenses"> <i class="fa fa-th-large"></i> Expenses
+              <i class="fa fa-chevron-left pull-right" id="arow9"></i> </a>
+            <ul class="collapse nav" id="expenses">
+              <li> <a href="expensescategory/"><i class="fa fa-angle-double-right"></i>Expenses Category</a> </li>
+              <li> <a href="expensestype/"><i class="fa fa-angle-double-right"></i>Expenses Types</a> </li>
             </ul>
           </li>
           <li class="panel">
@@ -40,12 +55,12 @@
             <ul class="collapse nav" id="clipboard">
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> Salary & Insurance</a> </li>
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> Expenses</a> </li>
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Summary report </a> </li>
+              
             </ul>
           </li>
           
           <li class="panel">
-            <a id="panel6" href="javascript:;" data-toggle="collapse" data-target="#inbox"> <i class="fa fa-calendar"></i> Daily cash flow
+            <a id="panel6" href="javascript:;" data-toggle="collapse" data-target="#inbox"> <i class="fa fa-inbox"></i> Daily cash flow
                <i class="fa fa fa-chevron-left pull-right" id="arow6"></i> </a>
             <ul class="collapse nav" id="inbox">
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li>
@@ -53,14 +68,14 @@
             </ul>
           </li>
           <li class="panel">
-            <a id="panel7" href="javascript:;" data-toggle="collapse" data-target="#cogs"> <i class="fa fa-line-chart"></i> Sale Forecast
+            <a id="panel7" href="javascript:;" data-toggle="collapse" data-target="#cogs"> <i class="fa fa-cogs"></i> Sale Forecast
               <i class="fa fa fa-chevron-left pull-right" id="arow7"></i> </a>
             <ul class="collapse nav" id="cogs">
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li></ul></li>
               <li class="panel">
-            <a id="panel8" href="javascript:;" data-toggle="collapse" data-target="#prof"> <i class="fa fa-money"></i> Profit
+            <a id="panel8" href="javascript:;" data-toggle="collapse" data-target="#profit"> <i class="fa fa-cogs"></i> Profit
               <i class="fa fa fa-chevron-left pull-right" id="arow8"></i> </a>
-            <ul class="collapse nav" id="prof">
+            <ul class="collapse nav" id="#profit">
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li>
               
             </ul>

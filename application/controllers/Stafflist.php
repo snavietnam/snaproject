@@ -5,6 +5,7 @@ class Stafflist extends MY_Controller {
 			parent::__construct();
 			$this->load->model('Staff_model');
 			$this->load->model('Staff_type_model');
+			$this->load->model('Department_model');
 	}
 	public function index()
 	{
@@ -20,6 +21,7 @@ class Stafflist extends MY_Controller {
 	}
 	public function add(){
 		$this->data['stafftype'] = $this->Staff_type_model->get_list();
+		$this->data['department'] = $this->Department_model->get_list();
 		     
         //neu ma co du lieu post len thi kiem tra
         if($this->input->post())
@@ -32,7 +34,17 @@ class Stafflist extends MY_Controller {
                     'startworkingdate' => $this->input->post('startworkingdate'),
                     'position' 	 => $this->input->post('position'),					
                     'startingsalary'=> $this->input->post('startingsalary'),					
-                    'description' 	=> $this->input->post('description'),					
+                    'description' 	=> $this->input->post('description'),	
+					'gender' 	=> $this->input->post('gender'),					
+                    'idno' 	=> $this->input->post('idno'),					
+                    'date_of_issue' 	=> $this->input->post('date_of_issue'),					
+                    'place_of_issue' 	=> $this->input->post('place_of_issue'),					
+                    'marital_status' 	=> $this->input->post('marital_status'),					
+                    'id_department' 	=> $this->input->post('id_department'),					
+                    'tax_identification_no' 	=> $this->input->post('tax_identification_no'),					
+                    'insurance_premiums' 	=> $this->input->post('insurance_premiums'),					
+                    'dependent_person' 	=> $this->input->post('dependent_person'),					
+                    'account_no' 	=> $this->input->post('account_no')
                 ); 
                 //them moi vao csdl
                 if($this->Staff_model->create($data))
@@ -53,6 +65,7 @@ class Stafflist extends MY_Controller {
 		$input['where'] = array('id' => $id);
 		$this->data['staffdetail'] = $this->Staff_model->get_row($input);
 		$this->data['stafftype'] = $this->Staff_type_model->get_list();
+		$this->data['department'] = $this->Department_model->get_list();
 		 if($this->input->post())
         {
 			$data = array(
@@ -63,7 +76,16 @@ class Stafflist extends MY_Controller {
                     'startworkingdate' => $this->input->post('startworkingdate'),
                     'position' 	 => $this->input->post('position'),					
                     'startingsalary'=> $this->input->post('startingsalary'),					
-                    'description' 	=> $this->input->post('description'),					
+                    'gender' 	=> $this->input->post('gender'),					
+                    'idno' 	=> $this->input->post('idno'),					
+                    'date_of_issue' 	=> $this->input->post('date_of_issue'),					
+                    'place_of_issue' 	=> $this->input->post('place_of_issue'),					
+                    'marital_status' 	=> $this->input->post('marital_status'),					
+                    'id_department' 	=> $this->input->post('id_department'),					
+                    'tax_identification_no' 	=> $this->input->post('tax_identification_no'),					
+                    'insurance_premiums' 	=> $this->input->post('insurance_premiums'),					
+                    'dependent_person' 	=> $this->input->post('dependent_person'),					
+                    'account_no' 	=> $this->input->post('account_no')					
                 ); 
                 //them moi vao csdl
                 if($this->Staff_model->update($id,$data))
