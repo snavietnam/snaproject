@@ -34,11 +34,11 @@
         
         <ul class="nav navbar-nav">
           <li class=""><a href="#"><i class="fa fa-refresh"></i> Start Tour</a> </li>
-          <li class=""><a href="#"><i class="fa fa-volume-up"></i></a> </li>
+          
           <li class=""><a href="#"><i class="fa fa-envelope"></i> <span class="badge">5</span></a> </li>
           <li class=""><a href="#"><i class="fa fa-bell"></i> <span class="badge">9</span></a> </li>
           <li class="">
-            <a href="#" class="user-profile"> <span class=""><img class="img-responsive" src="https://lh3.googleusercontent.com/-HxSAl6WJSI0/WM-dbkQ1ONI/AAAAAAAADuY/RsjaXC3tg4oBozCUYyLr12ZjZ1_Cl91mACJoC/w424-h319-p-rw/sumit.png"></span> </a>
+            <a href="#" class="user-profile"> <span class=""><img class="img-responsive" src="../../public/images/account.png"></span> </a>
           </li>
           <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sumit          
            <span class="caret"></span></a>
