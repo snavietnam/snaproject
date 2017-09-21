@@ -70,7 +70,7 @@
 								<div class="radio">
 								<label>
 								  <input type="radio" name="gender" id="optionsRadios1" value="1" <?php if($staffdetail->gender == 1) echo "checked" ?>>
-								  Men 
+								  Male 
 								</label>
 								</div>
 							  </div>
@@ -78,7 +78,7 @@
 							  <div class="radio">
 								<label>
 								  <input type="radio" name="gender" id="optionsRadios2" value="0" <?php if($staffdetail->gender == 0) echo "checked" ?>>
-								  Woment
+								  Female
 								</label>
 							  </div>
 							  </div>
