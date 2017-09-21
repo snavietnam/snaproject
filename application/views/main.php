@@ -3,17 +3,18 @@
       <!-- begin SIDE NAV USER PANEL -->
       <div class="left-sidebar" id="show-nav">
         <ul id="side" class="side-nav">
-			<li class="panel">
+			<!--<li class="panel">
             <a id="panel10" href="javascript:;" data-toggle="collapse" data-target="#department"> <i class="fa fa-address-book-o"></i> Department
               <i class="fa fa-chevron-left pull-right" id="arow10"></i> </a>
             <ul class="collapse nav" id="department">
-              <li> <a href="department/"><i class="fa fa-angle-double-right"></i> List Department</a> </li>
+              
             </ul>
-          </li>
+          </li>-->
           <li class="panel">
-            <a id="panel1" href="javascript:;" data-toggle="collapse" data-target="#Dashboard"> <i class="fa fa-address-book-o"></i> Employee
+            <a id="panel1" href="javascript:;" data-toggle="collapse" data-target="#Dashboard"> <i class="fa fa-address-book-o"></i> Employee & Department
               <i class="fa fa-chevron-left pull-right" id="arow1"></i> </a>
             <ul class="collapse nav" id="Dashboard">
+			  <li> <a href="department/"><i class="fa fa-angle-double-right"></i> List Department</a> </li>
               <li> <a href="stafflist/"><i class="fa fa-angle-double-right"></i> List of employees</a> </li>
               <li> <a href="salarylist/"><i class="fa fa-angle-double-right"></i> Salary table</a> </li>
             </ul>
@@ -33,18 +34,19 @@
               <li> <a href="project"><i class="fa fa-angle-double-right"></i> List of projects</a> </li>
             </ul>
           </li>
-		  <li class="panel">
+		  <!--<li class="panel">
             <a id="panel9" href="javascript:;" data-toggle="collapse" data-target="#expenses"> <i class="fa fa-th-large"></i> Expenses
               <i class="fa fa-chevron-left pull-right" id="arow9"></i> </a>
             <ul class="collapse nav" id="expenses">
-              <li> <a href="expensescategory/"><i class="fa fa-angle-double-right"></i>Expenses Category</a> </li>
-              <li> <a href="expensestype/"><i class="fa fa-angle-double-right"></i>Expenses Types</a> </li>
+              
             </ul>
-          </li>
+          </li>-->
           <li class="panel">
-            <a id="panel3" href="javascript:;" data-toggle="collapse" data-target="#calendar"> <i class="fa fa-list-alt"></i> Invoices
+            <a id="panel3" href="javascript:;" data-toggle="collapse" data-target="#calendar"> <i class="fa fa-list-alt"></i> Expenses & Invoices
               <i class="fa fa-chevron-left pull-right" id="arow3"></i> </a>
             <ul class="collapse nav" id="calendar">
+			  <li> <a href="expensescategory/"><i class="fa fa-angle-double-right"></i>Expenses Category</a> </li>
+              <li> <a href="expensestype/"><i class="fa fa-angle-double-right"></i>Expenses Types</a> </li>
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> Input invoice</a> </li>
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> Output invoice</a> </li>
             </ul>
