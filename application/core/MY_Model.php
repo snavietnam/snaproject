@@ -26,7 +26,19 @@ class MY_Model extends CI_Model {
 			return FALSE;
 		}
 	}
-	
+	/**
+	 * Them nhieu row moi
+	 * $data : du lieu ma ta can them
+	 */
+	function muticreate($data = array())
+	{
+		if($this->db->insert_batch($this->table, $data))
+		{
+		   return TRUE;
+		}else{
+			return FALSE;
+		}
+	}
 	/**
 	 * Cap nhat row tu id
 	 * $id : khoa chinh cua bang can sua

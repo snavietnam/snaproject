@@ -5,6 +5,7 @@
 						<li class="active">salary</li>
 					</ul>
             </div>
+			<?php $this->load->view('messager', $this->data); ?>
             <div class="col-md-8">
             <ul class="list-inline pull-right mini-stat">
 							<li>
@@ -31,7 +32,7 @@
 						<em>the salary information, show by month</em>
 					</div>
 					<div class="col-lg-6">
-					<form method="POST" action="">
+					<form method="GET" action="">
 						<div class="col-lg-5">
 						<div class="input-group date">
 						  <div class="input-group-addon">
@@ -40,8 +41,16 @@
 						  <input type="text" name="dateselect" class="form-control pull-right datepicker" id="datepicker">
 						</div>
 						</div>
-						<div class="col-lg-3">
-						<button id="send" type="submit" class="btn btn-default btn-block">Select</button>
+						<div class="col-lg-7 no-padding">
+							<div class="col-lg-4 no-padding">
+							<button id="send" type="submit" name="submit" value="select" class="btn btn-default btn-block">Select</button>
+							</div>
+							<div class="col-lg-4 no-padding">
+							<button id="send" type="submit" name="submit" value="add" class="btn btn-default btn-block">Input</button>
+							</div>
+							<div class="col-lg-4 no-padding">
+							<button id="send" type="submit" name="submit" value="edit" class="btn btn-default btn-block">updates</button>
+							</div>
 						</div>
 					</form>
 					</div>

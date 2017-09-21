@@ -1,4 +1,4 @@
-<?php  if(isset($message)){?>
+<?php  if(isset($message) && $message != null ){?>
 <div id="myModal" class="modal  modal-success fade" role="dialog">
 			  <div class="modal-dialog">
 				<!-- Modal content-->
@@ -23,4 +23,4 @@
 				$('#myModal').modal('show');
 			});
 			</script>
-<?php } ?>
+<?php }  ?>
