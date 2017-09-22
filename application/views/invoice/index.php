@@ -1,23 +1,23 @@
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="#">   Employee & Department</a></li>
-						<li class="active">Employee List</li> 
+						<li><i class="fa fa-home"></i><a href="#"> Invoices</a></li>
+						<li class="active">Invoices list</li>
 					</ul>
             </div>
 			<?php $this->load->view('messager', $this->data); ?>
             <div class="col-md-8">
             <ul class="list-inline pull-right mini-stat">
 							<li>
-								<h5>YEARS <span class="stat-value color-blue"><i class="fa fa-plus-circle"></i> 81,450</span></h5>
+								<h5>LIKES <span class="stat-value color-blue"><i class="fa fa-plus-circle"></i> 81,450</span></h5>
 								
 							</li>
 							<li>
-								<h5>CUSTOMERS <span class="stat-value color-green"><i class="fa fa-plus-circle"></i> 150,743</span></h5>
+								<h5>SUBSCRIBERS <span class="stat-value color-green"><i class="fa fa-plus-circle"></i> 150,743</span></h5>
 								
 							</li>
 							<li>
-								<h5>PROJECTS <span class="stat-value color-orang"><i class="fa fa-plus-circle"></i> 43,748</span></h5>
+								<h5>CUSTOMERS <span class="stat-value color-orang"><i class="fa fa-plus-circle"></i> 43,748</span></h5>
 								
 							</li>
 						</ul>
@@ -28,12 +28,12 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>EMPLOYEE LIST</h2>
-						<em> All employee's information</em>
+						<h2>Invoices list</h2>
+						<em>the first Invoices information</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
-						<a href="stafflist/add"><button type="button" class="btn btn-block btn-info btn-sm">ADD EMPLOYEE</button></a>
+						<a href="invoice/add"><button type="button" class="btn btn-block btn-info btn-sm">Add invoice</button></a>
 						</div>
 					</div>
 					<script>
@@ -50,34 +50,26 @@
 			<div class="row">
 				 <div class="box">
 				<div class="box-header">
-				  
+				  <h3 class="box-title">Data Table With invoice information</h3>
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">
 				  <table id="example2" class="table table-bordered table-striped">
 					<thead>
 					<tr>
-					  <th>ID</th>
+					  <th>Id</th>
 					  <th>Name</th>
-					  <th>Position</th>
-					  <th>Start date</th>
-                      <th>Employment Status</th>
-					  <th>Birthday</th>
 					  <th width="11%" >Edit/Delete</th>
 					</tr>
 					</thead>
 					<tbody>
-					<?php foreach($this->data['liststaff'] as $row){ ?>
+					<?php foreach($this->data['listinvoice'] as $row){ ?>
 					<tr>
 					  <td><?php echo $row->id ?></td>
 					  <td><?php echo $row->name ?></td>
-					  <td><?php echo $row->position ?></td>
-					  <td><?php echo $row->startworkingdate ?></td>
-                      <td><?php  if($row->id_type == 1) echo 'Full time'; else echo 'Part Time'; ?></td>
-					  <td><?php echo $row->birth ?></td>
 					  <td align="center">
-						<a href="stafflist/edit/<?php echo $row->id ?>"><button type="button" class="btn btn-danger"><i class="fa fa-edit"></i></button></a>
-						<a href="stafflist/del/<?php echo $row->id ?>"><button type="button" class="btn btn-warning"><i class="fa fa-times-circle"></i></button></a>
+						<a href="invoice/edit/<?php echo $row->id ?>"><button type="button" class="btn btn-danger"><i class="fa fa-edit"></i></button></a>
+						<a href="invoice/del/<?php echo $row->id ?>"><button type="button" class="btn btn-warning"><i class="fa fa-times-circle"></i></button></a>
 					  </td>
 					</tr>
 					<?php } ?>

@@ -64,15 +64,23 @@
 							  <?php } ?>
 							  </select>
 							</div>
-							
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Product</label>
+							  <input type="text" class="form-control" name="product" value="<?php echo $projectdetail->product ?>" id="inputSuccess" required="required" placeholder="Enter ..." >
+							</div>
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Payment date</label>
+							  <input type="text" class="form-control" name="paymentdate" id="inputSuccess" required="required" value="<?php echo $projectdetail->paymentdate ?>"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
+							  <span class="help-block">yyyy/mm/dd or yyyy-mm-dd</span>
+							</div>
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Start date</label>
-							  <input type="text" class="form-control" name="startdate"  value="<?php echo $projectdetail->startdate ?>" id="inputSuccess" required="required" placeholder="Enter ...">
+							  <input type="text" class="form-control" name="startdate"  value="<?php echo $projectdetail->startdate ?>" id="inputSuccess" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required="required" placeholder="Enter ...">
 							  <span class="help-block">yyyy/mm/dd or yyyy-mm-dd</span>
 							</div>
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> End date</label>
-							  <input type="text" class="form-control" name="enddate"  value="<?php echo $projectdetail->enddate ?>" id="inputSuccess" required="required" placeholder="Enter ...">
+							  <input type="text" class="form-control" name="enddate"  value="<?php echo $projectdetail->enddate ?>" id="inputSuccess" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required="required" placeholder="Enter ...">
 							  <span class="help-block">yyyy/mm/dd or yyyy-mm-dd</span>
 							</div>
 							
@@ -85,7 +93,7 @@
 							<div class="form-group">
 							  <a href="project/"><button class="btn btn-primary" type="button">Cancel</button></a>
 							  <button class="btn btn-primary" type="reset">Reset</button>
-							  <button type="submit" class="btn btn-success">Create</button>
+							  <button type="submit" class="btn btn-success">Updates</button>
 							</div>
 
 						  </form>

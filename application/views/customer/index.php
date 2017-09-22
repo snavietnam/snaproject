@@ -33,7 +33,7 @@
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
-						<a href="customer/add"><button type="button" class="btn btn-block btn-info btn-sm">Add Staff</button></a>
+						<a href="customer/add"><button type="button" class="btn btn-block btn-info btn-sm">Add Customer</button></a>
 						</div>
 					</div>
 					<script>

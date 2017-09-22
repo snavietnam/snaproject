@@ -50,13 +50,14 @@
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
-						  <form role="form" action="salarylist/add/<?php echo $dateselect ?>" method="POST">
+						  <form role="form" action="salarylist/edit" method="POST"> 
 							<?php foreach($liststaff as $row){ ?>
 							<div class="col-lg-4">
 							<!-- text input -->
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> <?php  echo  $row->name ?></label>
-							  <input type="text" class="form-control" name="name" value="<?php  echo  $row->salary ?>" id="inputSuccess" required="required" placeholder="Enter ..." >
+							  <input type="text" class="form-control" name="name[]" value="<?php echo  $row->salary ?>"  id="inputSuccess" required="required" placeholder="Enter ..." >
+							  <input type="hidden" class="form-control" name="id[]" value="<?php echo  $row->id ?>" id="inputSuccess"  placeholder="Enter ..." >
 							</div>
 							</div>
 							<?php } ?>
@@ -64,7 +65,7 @@
 							<div class="form-group">
 							  <a href="salarylist/"><button class="btn btn-primary" type="button">Cancel</button></a>
 							  <button class="btn btn-primary" type="reset">Reset</button>
-							  <button type="submit" class="btn btn-success">Create</button>
+							  <button type="submit" class="btn btn-success">Updates</button>
 							</div>
 							</div>
 						  </form>

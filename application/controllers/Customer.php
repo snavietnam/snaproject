@@ -23,6 +23,9 @@ class Customer extends MY_Controller {
         {
 			$data = array(                    
                     'name'       => $this->input->post('name'),				
+                    'address'       => $this->input->post('address'),				
+                    'tax_code'       => $this->input->post('tax_code'),				
+                    'tel'       => $this->input->post('tel'),				
                 ); 
                 //them moi vao csdl
                 if($this->customer_model->create($data))
@@ -45,7 +48,10 @@ class Customer extends MY_Controller {
 		if($this->input->post())
         {
 			$data = array(                    
-                    'name'       => $this->input->post('name'),				
+                    'name'       => $this->input->post('name'),
+					'address'       => $this->input->post('address'),				
+                    'tax_code'       => $this->input->post('tax_code'),				
+                    'tel'       => $this->input->post('tel'),
                 ); 
                 //them moi vao csdl
                 if($this->customer_model->update($id,$data))

@@ -27,6 +27,8 @@ class Project extends MY_Controller {
 			$data = array(
                     'id_customer'    => $this->input->post('id_customer'),
                     'name'       => $this->input->post('name'),					
+                    'product'       => $this->input->post('product'),					
+                    'paymentdate'       => $this->input->post('paymentdate'),					
                     'startdate' 	=> $this->input->post('startdate'),					
                     'enddate' 	=> $this->input->post('enddate'),					
                     'description' 	=> $this->input->post('description')				
@@ -54,7 +56,9 @@ class Project extends MY_Controller {
         {
 			$data = array(
                     'id_customer'    => $this->input->post('id_customer'),
-                    'name'       => $this->input->post('name'),					
+                    'name'       => $this->input->post('name'),
+					'product'       => $this->input->post('product'),					
+                    'paymentdate'       => $this->input->post('paymentdate'),						
                     'startdate' 	=> $this->input->post('startdate'),					
                     'enddate' 	=> $this->input->post('enddate'),					
                     'description' 	=> $this->input->post('description')				

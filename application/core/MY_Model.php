@@ -18,7 +18,7 @@ class MY_Model extends CI_Model {
 	 * $data : du lieu ma ta can them
 	 */
 	function create($data = array())
-	{
+	{ 
 		if($this->db->insert($this->table, $data))
 		{
 		   return TRUE;
@@ -57,7 +57,9 @@ class MY_Model extends CI_Model {
 	 	
 	 	return TRUE;
 	}
-	
+	function mutiupdate($data){
+	 	$this->db->update_batch($this->table,$data,'id');
+	}
 	/**
 	 * Cap nhat row tu dieu kien
 	 * $where : dieu kien

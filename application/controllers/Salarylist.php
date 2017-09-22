@@ -51,7 +51,7 @@ class Salarylist extends MY_Controller {
 				 $this->data['message'] = $message;
 			}
 		}
-		else{
+		else{ 
 			
 			$input['where'] = array('sna_salary.date LIKE' => ''.date("Y-m").'-%');
 			$this->data['liststaff'] = $this->Staff_model->get_list_form_more_table($input,'sna_salary','id_staff');
@@ -70,9 +70,33 @@ class Salarylist extends MY_Controller {
 				 
 			 );
 		}
-		$this->Salary_model->muticreate($data);
+		if($this->Salary_model->muticreate($data))
+                {
+                    //tạo ra nội dung thông báo
+                    $this->session->set_flashdata('message', 'Thêm mới dữ liệu thành công');
+                }else{
+                    $this->session->set_flashdata('message', 'Không thêm được');
+                }
+                //chuyen tới trang danh sách
+                redirect(base_url('salarylist'));
 	}
-	public function edit($date){
-		
+	public function edit(){
+		 $data = array();
+		for($i = 0;$i < count($_POST['name']);$i++){
+			 $data[$i] = array(
+				 'id' => $this->input->post('id')[$i],
+				 'salary' => $this->input->post('name')[$i]
+				 
+			 );
+		}
+		if($this->Salary_model->mutiupdate($data))
+                {
+                    //tạo ra nội dung thông báo
+                    $this->session->set_flashdata('message', 'update dữ liệu thành công');
+                }else{
+                    $this->session->set_flashdata('message', 'Không thêm được');
+                }
+                //chuyen tới trang danh sách
+                redirect(base_url('salarylist'));
 	}
 }

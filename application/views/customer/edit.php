@@ -56,10 +56,22 @@
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" value="<?php echo $customerdetail->name ?>" required="required" placeholder="Enter ..." >
 							</div>
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Address</label>
+							  <input type="text" class="form-control" name="address" id="inputSuccess" value="<?php echo $customerdetail->address ?>" required="required" placeholder="Enter ..." >
+							</div>
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tax_code</label>
+							  <input type="text" class="form-control" name="tax_code" id="inputSuccess" value="<?php echo $customerdetail->tax_code ?>" required="required" placeholder="Enter ..." >
+							</div>
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tel</label>
+							  <input type="text" class="form-control" name="tel" id="inputSuccess" value="<?php echo $customerdetail->tel ?>" required="required" placeholder="Enter ..." >
+							</div>
 							<div class="form-group">
 							  <a href="customer/"><button class="btn btn-primary" type="button">Cancel</button></a>
 							  <button class="btn btn-primary" type="reset">Reset</button>
-							  <button type="submit" class="btn btn-success">Create</button>
+							  <button type="submit" class="btn btn-success">Updates</button>
 							</div>
 
 						  </form>

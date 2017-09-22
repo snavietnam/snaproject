@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <meta name="author" content="sumit kumar">
   <base href="<?php echo base_url(); ?>"/>
   <title>admin-template</title>
@@ -62,6 +62,9 @@
 	<script src="<?php echo public_url() ?>js/jquery.inputmask.date.extensions.js"></script>
 	<?php $this->load->view($temp,$this->data) ?>
  <script src="<?php echo public_url() ?>js/bootstrap.js"></script>
+	<script>
+		$('[data-mask]').inputmask()
+	</script>
   <script type="text/javascript">
     $(document).ready(function() {
       $("#panel1").click(function() {

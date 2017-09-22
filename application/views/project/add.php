@@ -64,15 +64,23 @@
 							  <?php } ?>
 							  </select>
 							</div>
-							
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Product</label>
+							  <input type="text" class="form-control" name="product" id="inputSuccess" required="required" placeholder="Enter ..." >
+							</div>
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Payment date</label>
+							  <input type="text" class="form-control" name="paymentdate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
+							  <span class="help-block">yyyy/mm/dd or yyyy-mm-dd</span>
+							</div>
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Start date</label>
-							  <input type="text" class="form-control" name="startdate" id="inputSuccess" required="required" placeholder="Enter ...">
+							  <input type="text" class="form-control" name="startdate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
 							  <span class="help-block">yyyy/mm/dd or yyyy-mm-dd</span>
 							</div>
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> End date</label>
-							  <input type="text" class="form-control" name="enddate" id="inputSuccess" required="required" placeholder="Enter ...">
+							  <input type="text" class="form-control" name="enddate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
 							  <span class="help-block">yyyy/mm/dd or yyyy-mm-dd</span>
 							</div>
 							

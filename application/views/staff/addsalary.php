@@ -47,7 +47,7 @@
 						<div class="box box-warning">
 						<div class="box-header with-border">
 						  <h3 class="box-title">Add salary (<?php echo $dateselect ?>)</h3>
-						</div>
+						</div> 
 						<!-- /.box-header -->
 						<div class="box-body">
 						  <form role="form" action="salarylist/add/<?php echo $dateselect ?>" method="POST">

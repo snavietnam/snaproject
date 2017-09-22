@@ -9,7 +9,7 @@ class Stafflist extends MY_Controller {
 	}
 	public function index()
 	{
-		$message = $this->session->flashdata('message');
+		$message = $this->session->flashdata('message'); 
 		// if($message != ''){
 			// var_dump($message);die;
 		// }

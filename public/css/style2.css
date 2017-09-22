@@ -13,6 +13,7 @@ html,
 body {
   height: 100%;
 }
+th{text-transform:uppercase}
 .layout-boxed html,
 .layout-boxed body {
   height: 100%;
@@ -1545,7 +1546,7 @@ a:focus {
   border-top-color: #dd4b39;
 }
 .box.box-warning {
-  border-top-color: #f39c12;
+  border-top-color: #00c0ef;
 }
 .box.box-success {
   border-top-color: #00a65a;
