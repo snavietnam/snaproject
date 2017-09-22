@@ -13,7 +13,7 @@ html,
 body {
   height: 100%;
 }
-th{text-transform:uppercase}
+th, h2{text-transform:uppercase}
 .layout-boxed html,
 .layout-boxed body {
   height: 100%;
