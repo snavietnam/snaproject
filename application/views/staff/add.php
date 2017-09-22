@@ -8,15 +8,15 @@
             <div class="col-md-8">
             <ul class="list-inline pull-right mini-stat">
 							<li>
-								<h5>LIKES <span class="stat-value color-blue"><i class="fa fa-plus-circle"></i> 81,450</span></h5>
+								<h5>YEARS <span class="stat-value color-blue"><i class="fa fa-plus-circle"></i> 81,450</span></h5>
 								
 							</li>
 							<li>
-								<h5>SUBSCRIBERS <span class="stat-value color-green"><i class="fa fa-plus-circle"></i> 150,743</span></h5>
+								<h5>CUSTOMERS <span class="stat-value color-green"><i class="fa fa-plus-circle"></i> 150,743</span></h5>
 								
 							</li>
 							<li>
-								<h5>CUSTOMERS <span class="stat-value color-orang"><i class="fa fa-plus-circle"></i> 43,748</span></h5>
+								<h5>PROJECTS <span class="stat-value color-orang"><i class="fa fa-plus-circle"></i> 43,748</span></h5>
 								
 							</li>
 						</ul>
@@ -28,7 +28,7 @@
                 <div class="main-header">
 					<div class="col-lg-6">
 						<h2>EMPLOYEE LIST</h2>
-						<em> All employee's information</em>
+						<em> Add new employee information</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
@@ -46,7 +46,7 @@
 					<div class="col-lg-offset-1 col-lg-10">
 						<div class="box box-warning">
 						<div class="box-header with-border">
-						  <h3 class="box-title">Add new staff</h3>
+						  <h3 class="box-title">General Information</h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
@@ -54,94 +54,87 @@
 							<div class="col-lg-6">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Full Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
-							<div class="form-group">
-							  <label>Staff type</label>
+							<div class="form-group has-success">
+							  <label class="control-label"><i class="fa fa-angle-right"></i> Employment Status</label>
 							  <select name="id_type" class="form-control">
 							  <?php foreach($stafftype as $row){ ?>
 								<option value="<?php echo $row->id ?>"><?php echo $row->name ?></option>
 							  <?php } ?>
 							  </select>
 							</div>
-							<div class="form-group">
+							<div class="form-group has-success"><label class="control-label"><i class="fa fa-angle-right"></i> Gender</label> <br/>
+                            
 							<div class="col-lg-6">
 								<div class="radio">
-								<label>
 								  <input type="radio" name="gender" id="optionsRadios1" value="1" checked="">
-								  Male 
-								</label>
+                                  <label>Male </label>
 								</div>
 							  </div>
 							  <div class="col-lg-6">
 							  <div class="radio">
-								<label>
 								  <input type="radio" name="gender" id="optionsRadios2" value="0">
-								  Female
-								</label>
+								<label>  Female</label>
 							  </div>
 							  </div>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Birthday</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Date of Birth</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
 								  </div>
 								  <input type="input" name="birth" class="form-control" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask>
 								</div>
-							  <span class="help-block">yyyy/mm/dd or yyyy-mm-dd</span>
+							  
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Id no</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> ID Card Number</label>
 							  <input type="text" class="form-control" name="idno" id="inputSuccess" required="required" placeholder="Enter ...">
-							  <span class="help-block">123456789</span>
+							  <span class="help-block">Ex: 123456789</span>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Date of issue</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Date of Issue</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
 								  </div>
 								  <input type="input" name="date_of_issue" class="form-control" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask>
 								</div>
-							  <span class="help-block">yyyy/mm/dd or yyyy-mm-dd</span>
+							  
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i>Place of issue</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Place of Issue</label>
 							  <input type="text" class="form-control" name="place_of_issue" id="inputSuccess" required="required" placeholder="Enter ...">
-							  <span class="help-block">CA: TP.hcm</span>
+							  <span class="help-block">Ex: TP.HCM, Long An, etc</span>
 							</div>
-							<div class="form-group">
+							<div class="form-group has-success"><label class="control-label"><i class="fa fa-angle-right"></i> Marital Status</label> <br/>
 							<div class="col-lg-6">
 								<div class="radio">
-								<label>
 								  <input type="radio" name="marital_status" id="optionsRadios1" value="1" checked="">
-								  single 
-								</label>
+								 <label> Single </label>
 								</div>
 							  </div>
 							  <div class="col-lg-6">
 							  <div class="radio">
-								<label>
 								  <input type="radio" name="marital_status" id="optionsRadios2" value="0">
-								  a married person
-								</label>
+								<label> Married</label>
 							  </div>
 							  </div>
 							</div>
-							<div class="form-group">
-							  <label>Email</label>
+							<div class="form-group has-success">
+							  <label class="control-label"><i class="fa fa-angle-right"></i> Email</label>
 							  <input type="email" class="form-control" name="email" required="required" placeholder="Email ..." >
-							   <span class="help-block">ex:sna@global.net</span>
+							   <span class="help-block">Ex: sna@global.net</span>
 							</div>
 							</div>
 							
 							<div class="col-lg-6">
 							<!-- text input -->
-							<div class="form-group">
-							  <label>Department</label>
+							<div class="form-group has-success">
+							  <label class="control-label"><i class="fa fa-angle-right"></i> Department</label>
 							  <select name="id_department" class="form-control">
 							  <?php foreach($department as $row){ ?>
 								<option value="<?php echo $row->id ?>"><?php echo $row->name ?></option>
@@ -150,49 +143,49 @@
 							</div>
 							
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Position</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Position</label>
 							  <input type="text" class="form-control" name="position" id="inputSuccess" required="required" placeholder="Enter ...">
 							  
 							</div>
 							
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Start working date</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Start Working Date</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
 								  </div>
 								  <input type="input" name="startworkingdate" class="form-control" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask>
 								</div>
-							  <span class="help-block">yyyy/mm/dd or yyyy-mm-dd</span>
+							 
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i>Ma số thuế</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Tax Identification Number (TIN)</label>
 							  <input type="text" class="form-control" name="tax_identification_no" id="inputSuccess"  placeholder="Enter ...">
-							  <span class="help-block">Số tài khoản ngân hàng</span>
+							 
 							</div>
-							<div class="form-group has-warning">
-							  <label class="control-label" for="inputWarning"><i class="fa fa-bell-o"></i>Starting Salary </label>
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputWarning"><i class="fa fa-angle-right"></i> Agreeable Salary </label>
 							  <input type="text" class="form-control" name="startingsalary" id="inputWarning" required="required" placeholder="Enter ...">
-							  <span class="help-block">Salary</span>
+							  <span class="help-block">Monthly salary</span>
 							</div>
 							
-							<div class="form-group has-warning">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Insurance Premiums</label>
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Insurance Payment Salary</label>
 							  <input type="text" class="form-control" name="insurance_premiums" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> dependent person no</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Number of Related people</label>
 							  <input type="text" class="form-control" name="dependent_person" id="inputSuccess" required="required" placeholder="Enter ...">
-							  <span class="help-block">số người phụ thuộc vào bạn</span>
+							  
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i>the bank account no</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Bank Account Number</label>
 							  <input type="text" class="form-control" name="account_no" id="inputSuccess"  placeholder="Enter ...">
-							  <span class="help-block">Số tài khoản ngân hàng</span>
+							  <span class="help-block">Shinhan Bank account</span>
 							</div>
 							<!-- textarea -->
-							<div class="form-group">
-							  <label>Description</label>
+							<div class="form-group optional">
+							  <label>Remark</label>
 							  <textarea class="form-control" rows="3" name="description" required="required" placeholder="Enter ..."></textarea>
 							</div>
 							</div>

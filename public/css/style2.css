@@ -14,6 +14,7 @@ body {
   height: 100%;
 }
 th, h2{text-transform:uppercase}
+.clearfix{clear:both}
 .layout-boxed html,
 .layout-boxed body {
   height: 100%;
@@ -1254,16 +1255,19 @@ a:focus {
   appearance: none;
 }
 .form-group.has-success label {
-  color: #00a65a;
+  color: #084951;
 }
 .form-group.has-success .form-control,
 .form-group.has-success .input-group-addon {
-  border-color: #00a65a;
+  border-color: #084951;
   box-shadow: none;
 }
 .form-group.has-success .help-block {
-  color: #00a65a;
+  color: #084951;
+  font-style:italic;
+  font-weight:300
 }
+.optional{color: #084951}
 .form-group.has-warning label {
   color: #f39c12;
 }
