@@ -2509,7 +2509,7 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight:600;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -2635,7 +2635,7 @@ input[type="search"] {
 .checkbox {
   position: relative;
   display: block;
-  margin-top: 10px;
+  margin-top:0;
   margin-bottom: 10px;
 }
 .radio label,
@@ -2833,9 +2833,9 @@ select[multiple].input-lg {
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
 }
 .has-success .input-group-addon {
-  color: #3c763d;
+  color: #084951;
   background-color: #dff0d8;
-  border-color: #3c763d;
+  border-color: #084951;
 }
 .has-success .form-control-feedback {
   color: #3c763d;

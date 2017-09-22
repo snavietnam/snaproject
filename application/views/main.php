@@ -24,7 +24,7 @@
               <i class="fa fa fa-chevron-left pull-right" id="arow5"></i>
             </a>
             <ul class="collapse nav" id="edit">
-              <li> <a href="customer/"><i class="fa fa-angle-double-right"></i> Customer list</a> </li>
+              <li> <a href="customer/"><i class="fa fa-angle-double-right"></i> Customer List</a> </li>
             </ul>
           </li>
           <li class="panel">
