@@ -127,7 +127,7 @@
 							<div class="form-group has-success">
 							  <label class="control-label"><i class="fa fa-angle-right"></i> Email</label>
 							  <input type="email" class="form-control" name="email" required="required" placeholder="Email ..." >
-							   <span class="help-block">Ex: sna@global.net</span>
+							   <span class="help-block">Ex: test@snaglobal.net</span>
 							</div>
 							</div>
 							
@@ -163,13 +163,13 @@
 							  <input type="text" class="form-control" name="tax_identification_no" id="inputSuccess"  placeholder="Enter ...">
 							 
 							</div>
-							<div class="form-group has-success">
+							<div class="form-group has-warning">
 							  <label class="control-label" for="inputWarning"><i class="fa fa-angle-right"></i> Agreeable Salary </label>
 							  <input type="text" class="form-control" name="startingsalary" id="inputWarning" required="required" placeholder="Enter ...">
 							  <span class="help-block">Monthly salary</span>
 							</div>
 							
-							<div class="form-group has-success">
+							<div class="form-group has-warning">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Insurance Payment Salary</label>
 							  <input type="text" class="form-control" name="insurance_premiums" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>

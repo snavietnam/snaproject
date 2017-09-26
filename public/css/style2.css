@@ -1278,6 +1278,8 @@ a:focus {
 }
 .form-group.has-warning .help-block {
   color: #f39c12;
+  font-style:italic;
+  font-weight:300
 }
 .form-group.has-error label {
   color: #dd4b39;

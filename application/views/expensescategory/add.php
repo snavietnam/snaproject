@@ -1,8 +1,8 @@
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="#"> Category</a></li>
-						<li class="active">Category list</li>
+						<li><i class="fa fa-home"></i><a href="#"> Expense & Invoice</a></li>
+						<li class="active"> Category List</li>
 					</ul>
             </div>
             <div class="col-md-8">
@@ -27,8 +27,8 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>CATEGORY LIST</h2>
-						<em>the category information</em>
+						<h2>EXPENSE CATEGORY</h2>
+						<em>Add new Exepense Category </em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
@@ -46,14 +46,14 @@
 					<div class="col-lg-offset-2 col-lg-8">
 						<div class="box box-warning">
 						<div class="box-header with-border">
-						  <h3 class="box-title">Add new category</h3>
+						  <h3 class="box-title">Add New Expense Category</h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
 						  <form role="form" action="" method="POST">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group">

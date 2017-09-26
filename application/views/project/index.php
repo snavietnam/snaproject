@@ -1,8 +1,8 @@
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="#"> Customer</a></li>
-						<li class="active">Customer list</li>
+						<li><i class="fa fa-home"></i><a href="#"> Project</a></li>
+						<li class="active">Project List</li>
 					</ul>
             </div>
 			<?php $this->load->view('messager', $this->data); ?>
@@ -28,12 +28,12 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>Customer list</h2>
-						<em>the first Customer information</em>
+						<h2>Project List</h2>
+						<em>Project's Information</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
-						<a href="project/add"><button type="button" class="btn btn-block btn-info btn-sm">Add Staff</button></a>
+						<a href="project/add"><button type="button" class="btn btn-block btn-info btn-sm">ADD PROJECT</button></a>
 						</div>
 					</div>
 					<script>
@@ -50,7 +50,7 @@
 			<div class="row">
 				 <div class="box">
 				<div class="box-header">
-				  <h3 class="box-title">Data Table With the first staff information</h3>
+				
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">

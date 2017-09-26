@@ -2,7 +2,7 @@
             <div class="col-md-4">
             <ul class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="#"> Customer</a></li>
-						<li class="active">Customer list</li>
+						<li class="active">Customer List</li>
 					</ul>
             </div>
             <div class="col-md-8">
@@ -28,7 +28,7 @@
                 <div class="main-header">
 					<div class="col-lg-6">
 						<h2>CUSTOMERS LIST</h2>
-						<em>the Customer information</em>
+						<em>Add new customer information</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
@@ -46,26 +46,26 @@
 					<div class="col-lg-offset-2 col-lg-8">
 						<div class="box box-warning">
 						<div class="box-header with-border">
-						  <h3 class="box-title">Add new customer</h3>
+						  <h3 class="box-title">Add New Customer</h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
 						  <form role="form" action="" method="POST">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Company Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Address</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Address</label>
 							  <input type="text" class="form-control" name="address" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tax_code</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Tax Code</label>
 							  <input type="text" class="form-control" name="tax_code" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tel</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Tel </label>
 							  <input type="text" class="form-control" name="tel" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group">
