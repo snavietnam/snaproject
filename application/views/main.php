@@ -45,6 +45,7 @@
             <a id="panel3" href="javascript:;" data-toggle="collapse" data-target="#calendar"> <i class="fa fa-list-alt"></i> Expenses & Invoices
               <i class="fa fa-chevron-left pull-right" id="arow3"></i> </a>
             <ul class="collapse nav" id="calendar">
+			  <li> <a href="vat/"><i class="fa fa-angle-double-right"></i>VAT table</a> </li>
 			  <li> <a href="expensescategory/"><i class="fa fa-angle-double-right"></i>Expenses Category</a> </li>
               <li> <a href="expensestype/"><i class="fa fa-angle-double-right"></i>Expenses Types</a> </li>
               <li> <a href="invoice/"><i class="fa fa-angle-double-right"></i>invoice</a> </li>             
