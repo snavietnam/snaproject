@@ -10,3 +10,13 @@ function pre($list, $exit = true){
 		die();
 	}
 }
+function show_values_in_month($row){
+	if($row != ''){
+		$total = 0;
+		foreach($row as $row1){
+			$total += $row1;
+			}
+		return $total;
+	}else 
+		return 'NULL';
+}

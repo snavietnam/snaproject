@@ -265,7 +265,13 @@ class MY_Model extends CI_Model {
 		{
 			$this->db->limit($input['limit'][0], $input['limit'][1]);
 		}
-		
+		//select dử liệu cụ thê
+		//var_dump(array_keys($input['select'])[0]);die;
+		if (isset($input['select']) && isset($input['select']))
+		{
+			//var_dump('ok');die;
+			$this->db->select(''.array_keys($input['select'])[0].' as '.array_values($input['select'])[0].'');
+		}
 	}
 
 	/**
@@ -274,6 +280,7 @@ class MY_Model extends CI_Model {
 	
 	function get_list_form_more_table($input = array(),$table,$col)
 	{
+		 $this->db->select('*');
 	    //xu ly ca du lieu dau vao
 		$this->get_list_set_input($input);
 		$this->db->join("$table", "$table.$col = $this->table.id");
