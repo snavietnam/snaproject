@@ -1,8 +1,8 @@
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="#"> Category</a></li>
-						<li class="active">Category list</li>
+						<li><i class="fa fa-home"></i><a href="#"> Expense & Invoice</a></li>
+						<li class="active"> Expense Category</li>
 					</ul>
             </div>
             <div class="col-md-8">
@@ -27,8 +27,8 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>CATEGORY LIST</h2>
-						<em>the Category information</em>
+						<h2>EXPENSE CATEGORY</h2>
+						<em>Edit current expense category</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
@@ -46,7 +46,7 @@
 					<div class="col-lg-offset-2 col-lg-8">
 						<div class="box box-warning">
 						<div class="box-header with-border">
-						  <h3 class="box-title">Add new category</h3>
+						  <h3 class="box-title">Update Expense Category</h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
@@ -59,7 +59,7 @@
 							<div class="form-group">
 							  <a href="expensescategory/"><button class="btn btn-primary" type="button">Cancel</button></a>
 							  <button class="btn btn-primary" type="reset">Reset</button>
-							  <button type="submit" class="btn btn-success">Create</button>
+							  <button type="submit" class="btn btn-success">Save</button>
 							</div>
 
 						  </form>

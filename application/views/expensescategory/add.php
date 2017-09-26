@@ -2,7 +2,7 @@
             <div class="col-md-4">
             <ul class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="#"> Expense & Invoice</a></li>
-						<li class="active"> Category List</li>
+						<li class="active"> Expense Category</li>
 					</ul>
             </div>
             <div class="col-md-8">
@@ -28,7 +28,7 @@
                 <div class="main-header">
 					<div class="col-lg-6">
 						<h2>EXPENSE CATEGORY</h2>
-						<em>Add new Exepense Category </em>
+						<em>Add new expense category </em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
