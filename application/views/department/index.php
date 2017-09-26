@@ -1,7 +1,7 @@
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="#"> Department</a></li>
+						<li><i class="fa fa-home"></i><a href="#">  Employee & Department</a></li>
 						<li class="active">Department List</li>
 					</ul>
             </div>

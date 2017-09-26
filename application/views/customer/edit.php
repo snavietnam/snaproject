@@ -2,21 +2,21 @@
             <div class="col-md-4">
             <ul class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="#"> Customer</a></li>
-						<li class="active">Customer list</li>
+						<li class="active">Customer List</li>
 					</ul>
             </div>
             <div class="col-md-8">
             <ul class="list-inline pull-right mini-stat">
 							<li>
-								<h5>LIKES <span class="stat-value color-blue"><i class="fa fa-plus-circle"></i> 81,450</span></h5>
+								<h5>YEARS <span class="stat-value color-blue"><i class="fa fa-plus-circle"></i> 81,450</span></h5>
 								
 							</li>
 							<li>
-								<h5>SUBSCRIBERS <span class="stat-value color-green"><i class="fa fa-plus-circle"></i> 150,743</span></h5>
+								<h5>CUSTOMERS <span class="stat-value color-green"><i class="fa fa-plus-circle"></i> 150,743</span></h5>
 								
 							</li>
 							<li>
-								<h5>CUSTOMERS <span class="stat-value color-orang"><i class="fa fa-plus-circle"></i> 43,748</span></h5>
+								<h5>PROJECTS <span class="stat-value color-orang"><i class="fa fa-plus-circle"></i> 43,748</span></h5>
 								
 							</li>
 						</ul>
@@ -28,7 +28,7 @@
                 <div class="main-header">
 					<div class="col-lg-6">
 						<h2>CUSTOMERS LIST</h2>
-						<em>the Customer information</em>
+						<em>All the Customer's information</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">

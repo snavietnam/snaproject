@@ -1,8 +1,8 @@
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="#"> Expenses Type</a></li>
-						<li class="active">Expenses type list</li>
+						<li><i class="fa fa-home"></i><a href="#"> Expense & Invoice</a></li>
+						<li class="active"> VAT Rate</li>
 					</ul>
             </div>
 			<?php $this->load->view('messager', $this->data); ?>
@@ -28,12 +28,12 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>Expenses type list</h2>
-						<em>Expenses type information</em>
+						<h2>VAT Rate</h2>
+						<em>VAT rate in invoices</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
-						<a href="vat/add"><button type="button" class="btn btn-block btn-info btn-sm">Add Expenses Type</button></a>
+						<a href="vat/add"><button type="button" class="btn btn-block btn-info btn-sm">ADD NEW RATE</button></a>
 						</div>
 					</div>
 					<script>
@@ -50,7 +50,7 @@
 			<div class="row">
 				 <div class="box">
 				<div class="box-header">
-				  <h3 class="box-title">Data Table With the first staff information</h3>
+				  
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">

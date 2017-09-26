@@ -1,8 +1,8 @@
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="#"> Employee</a></li>
-						<li class="active">Salary</li>
+						<li><i class="fa fa-home"></i><a href="#"> Employee & Department</a></li>
+						<li class="active">Salary Table</li>
 					</ul>
             </div>
 			<?php $this->load->view('messager', $this->data); ?>

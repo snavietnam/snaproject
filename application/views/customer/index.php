@@ -2,22 +2,22 @@
             <div class="col-md-4">
             <ul class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="#"> Customer</a></li>
-						<li class="active">Customer list</li>
+						<li class="active">Customer List</li>
 					</ul>
             </div>
 			<?php $this->load->view('messager', $this->data); ?>
             <div class="col-md-8">
             <ul class="list-inline pull-right mini-stat">
 							<li>
-								<h5>LIKES <span class="stat-value color-blue"><i class="fa fa-plus-circle"></i> 81,450</span></h5>
+								<h5>YEARS <span class="stat-value color-blue"><i class="fa fa-plus-circle"></i> 81,450</span></h5>
 								
 							</li>
 							<li>
-								<h5>SUBSCRIBERS <span class="stat-value color-green"><i class="fa fa-plus-circle"></i> 150,743</span></h5>
+								<h5>CUSTOMERS <span class="stat-value color-green"><i class="fa fa-plus-circle"></i> 150,743</span></h5>
 								
 							</li>
 							<li>
-								<h5>CUSTOMERS <span class="stat-value color-orang"><i class="fa fa-plus-circle"></i> 43,748</span></h5>
+								<h5>PROJECTS <span class="stat-value color-orang"><i class="fa fa-plus-circle"></i> 43,748</span></h5>
 								
 							</li>
 						</ul>
@@ -28,12 +28,12 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>Customer list</h2>
-						<em>the first Customer information</em>
+						<h2>Customer List</h2>
+						<em>All the Customer's information</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
-						<a href="customer/add"><button type="button" class="btn btn-block btn-info btn-sm">Add Customer</button></a>
+						<a href="customer/add"><button type="button" class="btn btn-block btn-info btn-sm">ADD CUSTOMER</button></a>
 						</div>
 					</div>
 					<script>
@@ -50,7 +50,7 @@
 			<div class="row">
 				 <div class="box">
 				<div class="box-header">
-				  <h3 class="box-title">Data Table With the first staff information</h3>
+				  
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">
