@@ -10,11 +10,13 @@
               
             </ul>
           </li>-->
+          <li class="panel"><a href="#"><i class="fa fa-user-circle-o fa-3x user"></i> <p>ADMIN<br/><span>Director</span></p></a><div class="clearfix"></div></li>
+        
           <li class="panel">
             <a id="panel1" href="javascript:;" data-toggle="collapse" data-target="#Dashboard"> <i class="fa fa-address-book-o"></i> Employee & Department
               <i class="fa fa-chevron-left pull-right" id="arow1"></i> </a>
             <ul class="collapse nav" id="Dashboard">
-			  <li> <a href="department/"><i class="fa fa-angle-double-right"></i>  Department List</a> </li>
+			  <li> <a href="department/"><i class="fa fa-angle-double-right"></i> Department List</a> </li>
               <li> <a href="stafflist/"><i class="fa fa-angle-double-right"></i> Employee List</a> </li>
               <li> <a href="salarylist/"><i class="fa fa-angle-double-right"></i> Salary Table</a> </li>
             </ul>
@@ -41,6 +43,7 @@
               
             </ul>
           </li>-->
+          
           <li class="panel">
             <a id="panel3" href="javascript:;" data-toggle="collapse" data-target="#calendar"> <i class="fa fa-list-alt"></i> Expense & Invoice
               <i class="fa fa-chevron-left pull-right" id="arow3"></i> </a>
