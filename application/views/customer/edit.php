@@ -28,11 +28,10 @@
                 <div class="main-header">
 					<div class="col-lg-6">
 						<h2>CUSTOMERS LIST</h2>
-						<em>All the Customer's information</em>
+						<em>Edit the Customer's information</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
-						
 						</div>
 					</div>
 					

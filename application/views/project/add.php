@@ -46,7 +46,7 @@
 					<div class="col-lg-offset-2 col-lg-8">
 						<div class="box box-warning">
 						<div class="box-header with-border">
-						  <h3 class="box-title">Update New Project</h3>
+						  <h3 class="box-title">Add New Project</h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
