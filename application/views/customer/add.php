@@ -61,6 +61,15 @@
 							  <input type="text" class="form-control" name="address" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Customer type</label>
+							  <select name="id_type" id="companyselect" class="form-control">
+									<option value="">Select...</option>
+									<?php foreach($customertype as $row){ ?>				 
+											<option value="<?php echo $row->id ?>"><?php echo $row->name ?></option>
+									<?php } ?>
+							  </select>
+							</div>
+							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Tax Code</label>
 							  <input type="text" class="form-control" name="tax_code" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>

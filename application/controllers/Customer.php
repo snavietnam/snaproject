@@ -3,7 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Customer extends MY_Controller {
 	function __construct(){
 			parent::__construct();
-			$this->load->model('customer_model');
+			$this->load->model('Customer_model');
+			$this->load->model('Customer_type_model');
 	}
 	public function index()
 	{
@@ -12,23 +13,26 @@ class Customer extends MY_Controller {
 			// var_dump($message);die;
 		// }
         $this->data['message'] = $message;
-		$this->data['listcustomer'] = $this->customer_model->get_list();
+		$this->data['listcustomer'] = $this->Customer_model->get_list();
+		$this->data['customertype'] = $this->Customer_type_model->get_list();
 		$this->data['temp'] = 'main.php';
 		$this->data['tempcon'] = 'customer/index.php';
 		$this->load->view('index',$this->data);
 	}
 	public function add(){  
         //neu ma co du lieu post len thi kiem tra
+		$this->data['customertype'] = $this->Customer_type_model->get_list();
         if($this->input->post())
         {
 			$data = array(                    
                     'name'       => $this->input->post('name'),				
-                    'address'       => $this->input->post('address'),				
-                    'tax_code'       => $this->input->post('tax_code'),				
-                    'tel'       => $this->input->post('tel'),				
+                    'id_type'    => $this->input->post('id_type'),				
+                    'address'    => $this->input->post('address'),				
+                    'tax_code'   => $this->input->post('tax_code'),				
+                    'tel'        => $this->input->post('tel'),				
                 ); 
                 //them moi vao csdl
-                if($this->customer_model->create($data))
+                if($this->Customer_model->create($data))
                 {
                     //tạo ra nội dung thông báo
                     $this->session->set_flashdata('message', 'Thêm mới dữ liệu thành công');
@@ -44,17 +48,19 @@ class Customer extends MY_Controller {
 	}
 	public function edit($id){
 		$input['where'] = array('id' => $id);
-		$this->data['customerdetail'] = $this->customer_model->get_row($input);
+		$this->data['customerdetail'] = $this->Customer_model->get_row($input);
+		$this->data['customertype'] = $this->Customer_type_model->get_list();
 		if($this->input->post())
         {
 			$data = array(                    
                     'name'       => $this->input->post('name'),
-					'address'       => $this->input->post('address'),				
-                    'tax_code'       => $this->input->post('tax_code'),				
-                    'tel'       => $this->input->post('tel'),
+					'id_type'    => $this->input->post('id_type'),
+					'address'    => $this->input->post('address'),				
+                    'tax_code'   => $this->input->post('tax_code'),				
+                    'tel'        => $this->input->post('tel'),
                 ); 
                 //them moi vao csdl
-                if($this->customer_model->update($id,$data))
+                if($this->Customer_model->update($id,$data))
                 {
                     //tạo ra nội dung thông báo
                     $this->session->set_flashdata('message', 'updates dữ liệu thành công');
@@ -69,7 +75,7 @@ class Customer extends MY_Controller {
 		$this->load->view('index',$this->data);
 	}
 	public function del($id){
-		 $this->customer_model->_del($id);      
+		 $this->Customer_model->_del($id);      
         //tạo ra nội dung thông báo
         $this->session->set_flashdata('message', 'Xóa tin tức thành công');
 		 redirect(base_url('customer'));

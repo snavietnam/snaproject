@@ -78,8 +78,12 @@
 								<div class="form-group">
 								  <label>Select</label>
 								  <select name="id_detail" id="last" class="form-control" >
-									<?php foreach($detail_log as $row){ ?>
-									<option value="<?php echo $row->id ?>" <?php if($row->id == $detail->id_detail) echo 'selected'; ?>><?php echo $row->name ?></option>
+									<?php foreach($expensescategory as $row){ ?>
+										 <optgroup label="<?php echo $row->name ?>">
+										<?php foreach($detail_log as $row1){ if($row->id == $row1->id_category){ ?>
+											<option value="<?php echo $row1->id ?>" <?php if($row1->id == $detail->id_detail) echo 'selected'; ?>><?php echo $row1->name ?></option>
+										<?php }} ?>
+										</optgroup>
 									<?php } ?>
 								  </select>
 								</div>
@@ -89,6 +93,19 @@
 								<?php foreach($daily as $row){ ?>
 									<div class='radio' style='display: inline-block;margin: 0 10px;'><label><input type='radio' name='id_daily_type' id='optionsRadios1' <?php if($row->id == $detail->id_daily_type) echo 'checked'; ?> value="<?php echo $row->id ?>"><?php echo $row->name ?></label></div>
 								<?php } ?>
+							</div>
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Company select</label>
+							  <select name="id_company" id="companyselect" class="form-control">
+									<option value="">Select...</option>
+									<?php foreach($customer_type as $row){ ?>
+									 <optgroup label="<?php echo $row->name ?>">
+										<?php foreach($customer as $row1){ if($row->id == $row1->id_type){?>
+											<option value="<?php echo $row1->id ?>" <?php if($row1->id == $detail->id_company) echo'selected'; ?>><?php echo $row1->name ?></option>
+										<?php }} ?>
+									 </optgroup>
+									<?php } ?>
+							  </select>
 							</div>
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
@@ -136,7 +153,7 @@
 							</div>
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tax_code</label>
-							  <input type="number" class="form-control" name="tax_code" value="<?php echo $detail->tax_code ?>" id="inputSuccess" required="required" placeholder="Enter ..." >
+							  <input type="number" class="form-control" name="tax_code" value="<?php echo $detail->tax_code ?>" id="tax_code" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="col-lg-7 no-padding">
 								<div class="form-group has-warning">
@@ -248,6 +265,18 @@
 						$( "#last" ).prop('disabled', true);
 					else
 						$( "#last" ).prop('disabled', false);
+				}
+			});
+		});
+		$("#companyselect").change(function() {
+			var base_url = window.location.origin;
+			  $.ajax({
+				url: base_url+'/invoice/companytexcode',
+				type: 'POST',
+				data: {"id": this.value},
+				success: function(data){
+					//alert('ok');
+					$('#tax_code').val(data);				
 				}
 			});
 		});
