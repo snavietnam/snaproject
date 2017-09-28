@@ -45,32 +45,22 @@
             <a id="panel3" href="javascript:;" data-toggle="collapse" data-target="#calendar"> <i class="fa fa-list-alt"></i> Expense & Invoice
               <i class="fa fa-chevron-left pull-right" id="arow3"></i> </a>
             <ul class="collapse nav" id="calendar">
-<<<<<<< HEAD
-			  <li> <a href="vat/"><i class="fa fa-angle-double-right"></i>VAT table</a> </li>
 			  <li> <a href="dailytype/"><i class="fa fa-angle-double-right"></i>Daily Type table</a> </li>
 			  <li> <a href="expensescategory/"><i class="fa fa-angle-double-right"></i>Expenses Category</a> </li>
               <li> <a href="expensestype/"><i class="fa fa-angle-double-right"></i>Expenses Types</a> </li>
               <li> <a href="invoice/"><i class="fa fa-angle-double-right"></i>invoice</a> </li>             
-=======
-			  <li> <a href="vat/"><i class="fa fa-angle-double-right"></i> VAT Rate</a> </li>
-			  <li> <a href="expensescategory/"><i class="fa fa-angle-double-right"></i> Expense Category</a> </li>
-              <li> <a href="expensestype/"><i class="fa fa-angle-double-right"></i> Expense Type</a> </li>
-              <li> <a href="invoice/"><i class="fa fa-angle-double-right"></i> Invoice</a> </li>             
->>>>>>> 911e4dfc7f2734de9716dec6e43eed42eb7497ff
+			  <li> <a href="vat/"><i class="fa fa-angle-double-right"></i> VAT Rate</a> </li>            
             </ul>
           </li>
           <li class="panel">
             <a id="panel4" href="javascript:;" data-toggle="collapse" data-target="#clipboard"> <i class="fa fa-bar-chart"></i> Budget
               <i class="fa fa fa-chevron-left pull-right" id="arow4"></i> </a>
             <ul class="collapse nav" id="clipboard">
-<<<<<<< HEAD
               <li> <a href="budget"><i class="fa fa-angle-double-right"></i> Budget</a> </li>
               <li> <a href="budget/salary"><i class="fa fa-angle-double-right"></i> Salary & Insurance</a> </li>
               <li> <a href="budget/expenses"><i class="fa fa-angle-double-right"></i> Expenses</a> </li>
-=======
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> Salary & Insurance</a> </li>
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> Expense</a> </li>
->>>>>>> 911e4dfc7f2734de9716dec6e43eed42eb7497ff
               
             </ul>
           </li>
