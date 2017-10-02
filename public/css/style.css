@@ -13,16 +13,14 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid red;
 }
 
-.color-blue{color:#00c0ef}
-.color-green{color:#00a65a}
-.color-orang{color:#f39c12}
+.color-blue{color:#1D92AF}
+.color-segreen{color:#3F7577}
+.color-orang{color:#CE7B11}
 
 .padding-top > .col-md-6{padding-bottom:15px;}
 .clearfix{clear:both}
-.admin{
-	padding:15px; padding-bottom:0
-}
-.panel i{padding:5px; line-height:20px}
+
+
 
 
 
@@ -197,7 +195,7 @@ body::-webkit-scrollbar-thumb {
 }
 .left-sidebar .side-nav li a {
     display: block;
-    padding: 12px;
+    padding: 15px;
     text-decoration: none;
 	line-height:30px
 }

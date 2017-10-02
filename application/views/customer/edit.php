@@ -45,18 +45,23 @@
 					<div class="col-lg-offset-2 col-lg-8">
 						<div class="box box-warning">
 						<div class="box-header with-border">
-						  <h3 class="box-title">Update Customer's Information</h3>
+						  <h3 class="box-title">Add new customer</h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
 						  <form role="form" action="customer/edit/<?php echo $customerdetail->id ?>" method="POST">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"> Name</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" value="<?php echo $customerdetail->name ?>" required="required" placeholder="Enter ..." >
 							</div>
+<<<<<<< HEAD
 							<div class="form-group has-success">							 
 							  <label class="control-label" for="inputSuccess">Customer type</label>
+=======
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Customer type</label>
+>>>>>>> 9be0eac091285fc5b258bc5504adedd973414f5d
 							  <select name="id_type" id="companyselect" class="form-control">
 									<option value="">Select...</option>
 									<?php foreach($customertype as $row){ ?>				 
@@ -65,16 +70,20 @@
 							  </select>
 							</div>
 							<div class="form-group has-success">
+<<<<<<< HEAD
 							  <label class="control-label" for="inputSuccess"> Address</label>
 
+=======
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Address</label>
+>>>>>>> 9be0eac091285fc5b258bc5504adedd973414f5d
 							  <input type="text" class="form-control" name="address" id="inputSuccess" value="<?php echo $customerdetail->address ?>" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"> Tax Code</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tax_code</label>
 							  <input type="text" class="form-control" name="tax_code" id="inputSuccess" value="<?php echo $customerdetail->tax_code ?>" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"> Tel</label>
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tel</label>
 							  <input type="text" class="form-control" name="tel" id="inputSuccess" value="<?php echo $customerdetail->tel ?>" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group">
