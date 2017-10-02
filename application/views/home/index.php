@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="<?php echo public_url() ?>css/morris.css">
 <link rel="stylesheet" href="<?php echo public_url() ?>css/jquery-jvectormap.css">
+ <link rel="stylesheet" href="<?php echo public_url() ?>Ionicons/css/ionicons.min.css">
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
@@ -849,9 +850,8 @@
     </section>
     <!-- /.content -->
 			</div>
+<script src="<?php echo public_url() ?>js/Chart.js"></script>
 <script src="<?php echo public_url() ?>js/raphael.js"></script>
 <script src="<?php echo public_url() ?>js/morris.js"></script>
-<script src="<?php echo public_url() ?>js/raphael.min.js"></script>
-<script src="<?php echo public_url() ?>js/morris.min.js"></script>
 <script src="<?php echo public_url() ?>js/jquery.knob.js"></script>
-<script src="<?php echo public_url() ?>js/dashboard.js"></script>
+<script src="<?php echo public_url() ?>js/dashboard2.js"></script>
