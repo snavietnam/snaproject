@@ -195,9 +195,9 @@ body::-webkit-scrollbar-thumb {
 }
 .left-sidebar .side-nav li a {
     display: block;
-    padding: 15px;
+    padding: 20px;
     text-decoration: none;
-	line-height:30px
+	line-height:15px
 }
 .panel {
     margin-bottom: 0px;
@@ -207,10 +207,15 @@ body::-webkit-scrollbar-thumb {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
-.panel a {
+.panel a, .admin a {
     color: #b8c7ce;
 }
+.admin{
+	padding:20px 15px 10px 20px
+}
+.admin a:hover{color:#fff}
 .user, .panel p{float:left}
+.user{padding-right:15px}
 .panel span{font-size:12px; padding-top:-5px}
 .panel p{margin-left:15px}
 .panel a:hover {
