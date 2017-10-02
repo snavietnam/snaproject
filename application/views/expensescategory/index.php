@@ -33,7 +33,7 @@
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
-						<a href="expensescategory/add"><button type="button" class="btn btn-block btn-info btn-sm">ADD CATEGORY</button></a>
+						<a href="expensescategory/add"><button type="button" class="btn btn-block btn-info btn-sm">ADD EXPENSE CATEGORY</button></a>
 						</div>
 					</div>
 					<script>

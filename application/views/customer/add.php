@@ -53,15 +53,15 @@
 						  <form role="form" action="" method="POST">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Company Name</label>
+							  <label class="control-label" for="inputSuccess">Company Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Address</label>
+							  <label class="control-label" for="inputSuccess">Address</label>
 							  <input type="text" class="form-control" name="address" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Customer type</label>
+							  <label class="control-label" for="inputSuccess">Customer type</label>
 							  <select name="id_type" id="companyselect" class="form-control">
 									<option value="">Select...</option>
 									<?php foreach($customertype as $row){ ?>				 
@@ -70,11 +70,11 @@
 							  </select>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Tax Code</label>
+							  <label class="control-label" for="inputSuccess"> Tax Code</label>
 							  <input type="text" class="form-control" name="tax_code" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Tel </label>
+							  <label class="control-label" for="inputSuccess"> Tel </label>
 							  <input type="text" class="form-control" name="tel" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group">

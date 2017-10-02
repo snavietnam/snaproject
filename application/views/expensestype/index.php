@@ -28,12 +28,12 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>Expenses type list</h2>
-						<em>Expenses type information</em>
+						<h2>EXPENSE TYPE LIST</h2>
+						<em>Expense types for each Expense Category</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
-						<a href="expensestype/add"><button type="button" class="btn btn-block btn-info btn-sm">Add Expenses Type</button></a>
+						<a href="expensestype/add"><button type="button" class="btn btn-block btn-info btn-sm">ADD EXPENSE TYPE</button></a>
 						</div>
 					</div>
 					<script>
@@ -50,16 +50,16 @@
 			<div class="row">
 				 <div class="box">
 				<div class="box-header">
-				  <h3 class="box-title">Data Table With the first staff information</h3>
+				  
 				</div>
 				<!-- /.box-header -->
-				<div class="box-body">
+				<div class="box-body"">
 				  <table id="example2" class="table table-bordered table-striped">
 					<thead>
 					<tr>
 					  <th>Id</th>
 					  <th>catagory</th>
-					  <th>Name</th>
+					  <th>Type</th>
 					  <th width="11%" >Edit/Delete</th>
 					</tr>
 					</thead>

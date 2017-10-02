@@ -54,18 +54,18 @@
 							<div class="col-lg-6">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Full Name</label>
+							  <label class="control-label" for="inputSuccess"> Full Name</label>
 							  <input type="text" class="form-control" name="name" value="<?php echo $staffdetail->name ?>" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label><i class="fa fa-angle-right"></i> Employment Status</label>
+							  <label> Employment Status</label>
 							  <select name="id_type" class="form-control">
 							  <?php foreach($stafftype as $row){ ?>
 								<option value="<?php echo $row->id ?>"><?php echo $row->name ?></option>
 							  <?php } ?>
 							  </select>
 							</div>
-							<div class="form-group has-success"><label class="control-label"><i class="fa fa-angle-right"></i> Gender</label> <br/>
+							<div class="form-group has-success"><label class="control-label"> Gender</label> <br/>
                             
 							<div class="col-lg-6">
 								<div class="radio">

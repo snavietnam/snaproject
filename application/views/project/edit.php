@@ -71,11 +71,11 @@
 							 <label class="control-label" for="inputSuccess"> Payment Date</label>
 							  <input type="text" class="form-control" name="paymentdate" id="inputSuccess" required="required" value="<?php echo $projectdetail->paymentdate ?>"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
 							</div>
-							<div class="form-group has-success">
+							<div class="form-group has-warning">
 							  <label class="control-label" for="inputSuccess"> Start Date</label>
 							  <input type="text" class="form-control" name="startdate"  value="<?php echo $projectdetail->startdate ?>" id="inputSuccess" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required="required" placeholder="Enter ...">
 							</div>
-							<div class="form-group has-success">
+							<div class="form-group has-warning">
 							  <label class="control-label" for="inputSuccess"> End Date</label>
 							  <input type="text" class="form-control" name="enddate"  value="<?php echo $projectdetail->enddate ?>" id="inputSuccess" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required="required" placeholder="Enter ...">
 							</div>

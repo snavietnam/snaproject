@@ -73,12 +73,12 @@
 							  <input type="text" class="form-control" name="paymentdate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
 							  
 							</div>
-							<div class="form-group has-success">
+							<div class="form-group has-warning">
 							  <label class="control-label" for="inputSuccess"> Start Date</label>
 							  <input type="text" class="form-control" name="startdate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
 							  
 							</div>
-							<div class="form-group has-success">
+							<div class="form-group has-warning">
 							  <label class="control-label" for="inputSuccess"> End date</label>
 							  <input type="text" class="form-control" name="enddate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
 							 
