@@ -50,7 +50,7 @@
 					</div>
 					<script>
 						$('.datepicker').datepicker({
-							format: "yyyy-mm",
+							format: "yyyy",
 							viewMode: "years", 
 							minViewMode: "years"
 						});
@@ -109,7 +109,7 @@
 					<tr>
 					  <th>TOTAL (USD)</th>
 					  <?php for($i=1;$i<13;$i++){ ?>
-					  <th><?php echo number_format(show_values_in_month($expenses[$i])+show_values_in_month($salary[$i])/22000, 2, ',', ' ') ?></th>
+					  <th><?php echo number_format((show_values_in_month($expenses[$i])+show_values_in_month($salary[$i]))/22700.00, 2, ',', ' ') ?></th>
 					  <?php } ?>
 					</tr>
 					</tfoot>

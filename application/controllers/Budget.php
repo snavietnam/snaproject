@@ -6,25 +6,38 @@ class Budget extends MY_Controller {
 			$this->load->model('Salary_model');
 			$this->load->model('Invoices_model');
 	}
-	public function index(){		
+	public function index(){
+		$salary;
+		$expenses;
 		if(isset($_GET) && $_GET != null){			
 			if($_GET['dateselect'] != null){
+				$input['where'] = array('sna_salary.date LIKE' => ''.$_GET['dateselect'].'-%');
+				$salary = $this->Salary_model->get_list($input);
+				//id_invoicetype = 3 is expensrs
+				$input['where'] = array('id_invoicetype' => 3,'paymentdate LIKE' => ''.$_GET['dateselect'].'-%');
+				$expenses = $this->Invoices_model->get_list($input);
+				//var_dump($expenses);die;
 			}
 			else{
-				 $input['where'] = array('sna_salary.date LIKE' => ''.date("Y-m").'-%');
-				 $this->data['liststaff'] = $this->Salary_model->get_list_form_more_table($input,'sna_salary','id_staff');
-				 $this->session->set_flashdata('message', 'Bạn chưa chọn ngày');
-				 $this->data['tempcon'] = 'staff/salarylist.php';
-				 $message = $this->session->flashdata('message');
-				 $this->data['message'] = $message;
+				$input['where'] = array('sna_salary.date LIKE' => ''.date("Y").'-%');
+				$salary = $this->Salary_model->get_list($input);
+				//id_invoicetype = 3 is expensrs
+				$input['where'] = array('id_invoicetype' => 3,'paymentdate LIKE' => ''.date("Y").'-%');
+				$expenses = $this->Invoices_model->get_list($input);
+				$this->session->set_flashdata('message', 'Bạn chưa chọn ngày');
+				$message = $this->session->flashdata('message');
+				$this->data['message'] = $message;
 			}
 		}
 		else{		
 			$input['where'] = array('sna_salary.date LIKE' => ''.date("Y").'-%');
 			$salary = $this->Salary_model->get_list($input);
+			//id_invoicetype = 3 is expensrs
 			$input['where'] = array('id_invoicetype' => 3,'paymentdate LIKE' => ''.date("Y").'-%');
 			$expenses = $this->Invoices_model->get_list($input);
-			for($i=1;$i<13;$i++){
+			//var_dump(date("Y"));die;			
+		}
+		for($i=1;$i<13;$i++){
 				foreach($salary as $row){
 					//get month from date string.	
 					$tam = $this->_getMonth($row->date);
@@ -47,9 +60,8 @@ class Budget extends MY_Controller {
 				if(!isset($this->data['expenses'][$i]))
 					$this->data['expenses'][$i] = '';
 			}
-			$this->data['tempcon'] = 'budget/index.php';
-		}
 		//var_dump($this->data['expenses']);die;
+				$this->data['tempcon'] = 'budget/index.php';
 				$this->data['temp'] = 'main.php';
 				$this->load->view('index',$this->data);
 	}

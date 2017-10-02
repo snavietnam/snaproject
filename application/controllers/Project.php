@@ -13,13 +13,15 @@ class Project extends MY_Controller {
 			// var_dump($message);die;
 		// }
         $this->data['message'] = $message;
+		
 		$this->data['listcustomer'] = $this->Project_model->get_list();
 		$this->data['temp'] = 'main.php';
 		$this->data['tempcon'] = 'project/index.php';
 		$this->load->view('index',$this->data);
 	}
 	public function add(){
-		$this->data['customerlist'] = $this->Customer_model->get_list();
+		$input['where'] = array('id_type' =>1);
+		$this->data['customerlist'] = $this->Customer_model->get_list($input);
 		     
         //neu ma co du lieu post len thi kiem tra
         if($this->input->post())

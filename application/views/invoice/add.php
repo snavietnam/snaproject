@@ -84,7 +84,24 @@
 							<div id="daily" class="form-group">
 							</div>
 							<div class="form-group has-success">
+<<<<<<< HEAD
 							  <label class="control-label" for="inputSuccess"> Name</label>
+=======
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Company select</label>
+							  <select name="id_company" id="companyselect" class="form-control">
+									<option value="">Select...</option>
+									<?php foreach($customer_type as $row){ ?>
+									 <optgroup label="<?php echo $row->name ?>">
+										<?php foreach($customer as $row1){ if($row->id == $row1->id_type){?>
+											<option value="<?php echo $row1->id ?>"><?php echo $row1->name ?></option>
+										<?php }} ?>
+									 </optgroup>
+									<?php } ?>
+							  </select>
+							</div>
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
+>>>>>>> b4265341a3cb5bac9b5a21b34040cb298821f2a0
 							  <input type="text" class="form-control" name="name" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
@@ -128,8 +145,13 @@
 							</div>
 							</div>
 							<div class="form-group has-success">
+<<<<<<< HEAD
 							  <label class="control-label" for="inputSuccess">Tax code</label>
 							  <input type="number" class="form-control" name="tax_code" id="inputSuccess" required="required" placeholder="Enter ..." >
+=======
+							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tax_code</label>
+							  <input type="number" class="form-control" name="tax_code" id="tax_code" required="required" placeholder="Enter ..." >
+>>>>>>> b4265341a3cb5bac9b5a21b34040cb298821f2a0
 							</div>
 							<div class="col-lg-7 no-padding">
 								<div class="form-group has-warning">
@@ -228,11 +250,26 @@
 				success: function(data){
 					//alert('ok');
 					$( "#last option" ).remove();
+					$( "#last optgroup" ).remove();
 					$( "#last" ).append(data);
 					if(data == '')
 						$( "#last" ).prop('disabled', true);
 					else
 						$( "#last" ).prop('disabled', false);
+				}
+			});
+		});
+		$("#companyselect").change(function() {
+			var base_url = window.location.origin;
+			  $.ajax({
+				url: base_url+'/invoice/companytexcode',
+				type: 'POST',
+				data: {"id": this.value},
+				success: function(data){
+					$.each(data, function(i, field){
+						alert(field.id);
+					});
+					//$('#tax_code').val(data['t']);				
 				}
 			});
 		});
