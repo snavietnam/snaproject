@@ -166,8 +166,10 @@ class Invoice extends MY_Controller {
 		if($_POST['category'] != ''){
 			$input['where'] = array('id_inv_category' => $_POST['category']);
 			$type = $this->Daily_type_model->get_list($input);
+			$flag = true;
 			foreach($type as $row){
-			echo "<div class='radio' style='display: inline-block;margin: 0 10px;'><label><input type='radio' name='id_daily_type' id='optionsRadios1' value='".$row->id_inv_category."'>".$row->name."</label></div>";
+			echo "<div class='radio' style='display: inline-block;margin: 0 10px;'><label><input type='radio' name='id_daily_type' id='optionsRadios1' value='".$row->id_inv_category."' ".(($flag == true)? 'checked':'').">".$row->name."</label></div>";
+			$flag = false;
 			}
 		}
 	}
