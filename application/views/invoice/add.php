@@ -28,7 +28,7 @@
                 <div class="main-header">
 					<div class="col-lg-6">
 						<h2>Invoice LIST</h2>
-						<em>the Invoice information</em>
+						<em>Add new invoice's information</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
@@ -46,7 +46,7 @@
 					<div class="col-lg-offset-2 col-lg-8">
 						<div class="box box-warning">
 						<div class="box-header with-border">
-						  <h3 class="box-title">Add new Invoice</h3>
+						  <h3 class="box-title">Add New Invoice</h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
@@ -84,16 +84,16 @@
 							<div id="daily" class="form-group">
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
+							  <label class="control-label" for="inputSuccess"> Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Address</label>
+							  <label class="control-label" for="inputSuccess"> Address</label>
 							  <input type="text" class="form-control" name="address" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="col-lg-4 no-padding">
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Payment date</label>
+							  <label class="control-label" for="inputSuccess">Payment date</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
@@ -105,7 +105,7 @@
 							</div>
 							<div class="col-lg-4">
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Invoice date</label>
+							  <label class="control-label" for="inputSuccess"> Invoice date</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
@@ -117,7 +117,7 @@
 							</div>
 							<div class="col-lg-4 no-padding">
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Received date</label>
+							  <label class="control-label" for="inputSuccess"> Received date</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
@@ -128,12 +128,12 @@
 							</div>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tax_code</label>
+							  <label class="control-label" for="inputSuccess">Tax code</label>
 							  <input type="number" class="form-control" name="tax_code" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="col-lg-7 no-padding">
 								<div class="form-group has-warning">
-								  <label class="control-label" for="inputWarning"><i class="fa fa-bell-o"></i> Total amount</label>
+								  <label class="control-label" for="inputWarning"> Total amount</label>
 								  <input type="text" name="money" class="form-control" id="inputWarning" placeholder="Enter ...">
 								  
 								</div>
@@ -150,12 +150,12 @@
 							</div>
 							<div class="col-lg-3 no-padding">
 								<div class="form-group has-error">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Total payment </label>
+							  <label class="control-label" for="inputSuccess">Total payment </label>
 							  <input type="text" class="form-control" name="tel" id="inputSuccess" required="required" placeholder="Enter ..." disabled >
 							</div>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Payment method </label>
+							  <label class="control-label" for="inputSuccess">Payment method </label>
 								  <select name="paymentmethod"  class="form-control">									
 									<?php foreach($method as $row){ ?>
 										<option value="<?php echo $row->id ?>"><?php echo $row->name ?></option>
@@ -163,7 +163,7 @@
 								  </select>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tel</label>
+							  <label class="control-label" for="inputSuccess"> Tel</label>
 							  <input type="text" class="form-control" name="phone" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group">

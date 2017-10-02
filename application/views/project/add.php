@@ -53,11 +53,11 @@
 						  <form role="form" action="" method="POST">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Name</label>
+							  <label class="control-label" for="inputSuccess"> Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label"><i class="fa fa-angle-right"></i> Customer</label>
+							  <label class="control-label"> Customer</label>
 							  <select name="id_customer" class="form-control">
 							  <?php foreach($customerlist as $row){ ?>
 								<option value="<?php echo $row->id ?>"><?php echo $row->name ?></option>
@@ -65,21 +65,21 @@
 							  </select>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Product</label>
+							  <label class="control-label" for="inputSuccess"> Product</label>
 							  <input type="text" class="form-control" name="product" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Payment Date</label>
+							  <label class="control-label" for="inputSuccess">Payment Date</label>
 							  <input type="text" class="form-control" name="paymentdate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
 							  
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Start Date</label>
+							  <label class="control-label" for="inputSuccess"> Start Date</label>
 							  <input type="text" class="form-control" name="startdate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
 							  
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> End date</label>
+							  <label class="control-label" for="inputSuccess"> End date</label>
 							  <input type="text" class="form-control" name="enddate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
 							 
 							</div>

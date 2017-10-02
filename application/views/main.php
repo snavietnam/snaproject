@@ -10,7 +10,7 @@
               
             </ul>
           </li>-->
-          <li class="panel"><a href="#"><i class="fa fa-user-circle-o fa-3x user"></i> <p>ADMIN<br/><span>Director</span></p></a><div class="clearfix"></div></li>
+          <div class="panel admin"><a href="#"><i class="fa fa-user-circle-o fa-3x user"></i> <p>ADMIN<br/><span>Director</span></p></a><div class="clearfix"></div></div>
         
           <li class="panel">
             <a id="panel1" href="javascript:;" data-toggle="collapse" data-target="#Dashboard"> <i class="fa fa-address-book-o"></i> Employee & Department
@@ -108,6 +108,7 @@
     </div>
     <div class="right-container" id="right-container">
         <div class="container-fluid">
+        	
 			<?php $this->load->view($tempcon,$this->data) ?>
 		</div>
   </div>

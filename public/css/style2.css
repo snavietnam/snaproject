@@ -1255,11 +1255,11 @@ a:focus {
   appearance: none;
 }
 .form-group.has-success label {
-  color: #084951;
+  color: #222d32;
 }
 .form-group.has-success .form-control,
 .form-group.has-success .input-group-addon {
-  border-color: #084951;
+  border-color: #d2d6de;
   box-shadow: none;
 }
 .form-group.has-success .help-block {
@@ -1269,15 +1269,15 @@ a:focus {
 }
 .optional{color: #084951}
 .form-group.has-warning label {
-  color: #f39c12;
+  color: #00a65a;
 }
 .form-group.has-warning .form-control,
 .form-group.has-warning .input-group-addon {
-  border-color: #f39c12;
+  border-color: #00a65a;
   box-shadow: none;
 }
 .form-group.has-warning .help-block {
-  color: #f39c12;
+  color: #00a65a;
   font-style:italic;
   font-weight:300
 }

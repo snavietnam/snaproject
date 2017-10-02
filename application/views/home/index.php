@@ -24,5 +24,5 @@
             </div>
             <div class="row">
 					<h1>Welcome admin</h1>
-					<h2> parameter number</h2>
+					<img src="../../../public/images/dashboard.jpg" />
 			</div>
