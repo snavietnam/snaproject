@@ -102,7 +102,7 @@
 							</div>
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Address</label>
-							  <input type="text" class="form-control" name="address" id="inputSuccess" required="required" placeholder="Enter ..." >
+							  <input type="text" class="form-control" name="address" id="address" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="col-lg-4 no-padding">
 							<div class="form-group has-success">
@@ -177,7 +177,7 @@
 							</div>
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tel</label>
-							  <input type="text" class="form-control" name="phone" id="inputSuccess" required="required" placeholder="Enter ..." >
+							  <input type="text" class="form-control" name="phone" id="tel" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group">
 							  <label>Remark</label>
@@ -256,11 +256,11 @@
 				url: base_url+'/invoice/companytexcode',
 				type: 'POST',
 				data: {"id": this.value},
+				dataType: 'json',
 				success: function(data){
-					$.each(data, function(i, field){
-						alert(field.id);
-					});
-					//$('#tax_code').val(data['t']);				
+					$('#tax_code').val(data['tax_code']);				
+					$('#address').val(data['address']);				
+					$('#tel').val(data['tel']);				
 				}
 			});
 		});
