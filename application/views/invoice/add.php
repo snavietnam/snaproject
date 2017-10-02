@@ -28,7 +28,7 @@
                 <div class="main-header">
 					<div class="col-lg-6">
 						<h2>Invoice LIST</h2>
-						<em>the Invoice information</em>
+						<em>Add new invoice's information</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
@@ -46,7 +46,7 @@
 					<div class="col-lg-offset-2 col-lg-8">
 						<div class="box box-warning">
 						<div class="box-header with-border">
-						  <h3 class="box-title">Add new Invoice</h3>
+						  <h3 class="box-title">Add New Invoice</h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">

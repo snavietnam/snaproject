@@ -54,18 +54,18 @@
 							<div class="col-lg-6">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Full Name</label>
+							  <label class="control-label" for="inputSuccess"> Full Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label"><i class="fa fa-angle-right"></i> Employment Status</label>
+							  <label class="control-label">Employment Status</label>
 							  <select name="id_type" class="form-control">
 							  <?php foreach($stafftype as $row){ ?>
 								<option value="<?php echo $row->id ?>"><?php echo $row->name ?></option>
 							  <?php } ?>
 							  </select>
 							</div>
-							<div class="form-group has-success"><label class="control-label"><i class="fa fa-angle-right"></i> Gender</label> <br/>
+							<div class="form-group has-success"><label class="control-label"> Gender</label> <br/>
                             
 							<div class="col-lg-6">
 								<div class="radio">
@@ -81,7 +81,7 @@
 							  </div>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Date of Birth</label>
+							  <label class="control-label" for="inputSuccess"> Date of Birth</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
@@ -91,12 +91,12 @@
 							  
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> ID Card Number</label>
+							  <label class="control-label" for="inputSuccess"> ID Card Number</label>
 							  <input type="text" class="form-control" name="idno" id="inputSuccess" required="required" placeholder="Enter ...">
 							  <span class="help-block">Ex: 123456789</span>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Date of Issue</label>
+							  <label class="control-label" for="inputSuccess"> Date of Issue</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
@@ -106,11 +106,11 @@
 							  
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Place of Issue</label>
+							  <label class="control-label" for="inputSuccess"> Place of Issue</label>
 							  <input type="text" class="form-control" name="place_of_issue" id="inputSuccess" required="required" placeholder="Enter ...">
 							  <span class="help-block">Ex: TP.HCM, Long An, etc</span>
 							</div>
-							<div class="form-group has-success"><label class="control-label"><i class="fa fa-angle-right"></i> Marital Status</label> <br/>
+							<div class="form-group has-success"><label class="control-label"> Marital Status</label> <br/>
 							<div class="col-lg-6">
 								<div class="radio">
 								  <input type="radio" name="marital_status" id="optionsRadios1" value="1" checked="">
@@ -125,7 +125,7 @@
 							  </div>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label"><i class="fa fa-angle-right"></i> Email</label>
+							  <label class="control-label"> Email</label>
 							  <input type="email" class="form-control" name="email" required="required" placeholder="Email ..." >
 							   <span class="help-block">Ex: test@snaglobal.net</span>
 							</div>
@@ -134,7 +134,7 @@
 							<div class="col-lg-6">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label"><i class="fa fa-angle-right"></i> Department</label>
+							  <label class="control-label"> Department</label>
 							  <select name="id_department" class="form-control">
 							  <?php foreach($department as $row){ ?>
 								<option value="<?php echo $row->id ?>"><?php echo $row->name ?></option>
@@ -143,13 +143,13 @@
 							</div>
 							
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Position</label>
+							  <label class="control-label" for="inputSuccess">Position</label>
 							  <input type="text" class="form-control" name="position" id="inputSuccess" required="required" placeholder="Enter ...">
 							  
 							</div>
 							
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Start Working Date</label>
+							  <label class="control-label" for="inputSuccess"> Start Working Date</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
@@ -159,27 +159,27 @@
 							 
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Tax Identification Number (TIN)</label>
+							  <label class="control-label" for="inputSuccess"> Tax Identification Number (TIN)</label>
 							  <input type="text" class="form-control" name="tax_identification_no" id="inputSuccess"  placeholder="Enter ...">
 							 
 							</div>
 							<div class="form-group has-warning">
-							  <label class="control-label" for="inputWarning"><i class="fa fa-angle-right"></i> Agreeable Salary </label>
+							  <label class="control-label" for="inputWarning"> Agreeable Salary </label>
 							  <input type="text" class="form-control" name="startingsalary" id="inputWarning" required="required" placeholder="Enter ...">
 							  <span class="help-block">Monthly salary</span>
 							</div>
 							
 							<div class="form-group has-warning">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Insurance Payment Salary</label>
+							  <label class="control-label" for="inputSuccess"> Insurance Payment Salary</label>
 							  <input type="text" class="form-control" name="insurance_premiums" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Number of Related people</label>
+							  <label class="control-label" for="inputSuccess"> Number of Related people</label>
 							  <input type="text" class="form-control" name="dependent_person" id="inputSuccess" required="required" placeholder="Enter ...">
 							  
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Bank Account Number</label>
+							  <label class="control-label" for="inputSuccess"> Bank Account Number</label>
 							  <input type="text" class="form-control" name="account_no" id="inputSuccess"  placeholder="Enter ...">
 							  <span class="help-block">Shinhan Bank account</span>
 							</div>

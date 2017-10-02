@@ -13,9 +13,9 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid red;
 }
 
-.color-blue{color:#1D92AF}
-.color-segreen{color:#3F7577}
-.color-orang{color:#CE7B11}
+.color-blue{color:#00c0ef}
+.color-green{color:#00a65a}
+.color-orang{color:#f39c12}
 
 .padding-top > .col-md-6{padding-bottom:15px;}
 .clearfix{clear:both}
