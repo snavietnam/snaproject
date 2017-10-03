@@ -157,11 +157,11 @@ class MY_Model extends CI_Model {
 	    {
 	        $this->db->select($field);
 	    }
-		$this->db->where($where);
+		$this->get_list_set_input($where);
 		$query = $this->db->get($this->table);
 		if ($query->num_rows())
 		{
-			return $query->row();
+			return $query->result_array();
 		}
 		
 		return FALSE;
@@ -220,7 +220,7 @@ class MY_Model extends CI_Model {
 		//echo $this->table;die;
 		$query = $this->db->get($this->table);
 		
-		//echo $this->db->last_query();
+		//echo $this->db->last_query();die;
 		return $query->result();
 	}
 	

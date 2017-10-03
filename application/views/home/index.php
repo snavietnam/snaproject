@@ -851,7 +851,4 @@
     <!-- /.content -->
 			</div>
 <script src="<?php echo public_url() ?>js/Chart.js"></script>
-<script src="<?php echo public_url() ?>js/raphael.js"></script>
-<script src="<?php echo public_url() ?>js/morris.js"></script>
-<script src="<?php echo public_url() ?>js/jquery.knob.js"></script>
 <script src="<?php echo public_url() ?>js/dashboard2.js"></script>

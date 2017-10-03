@@ -5,6 +5,7 @@ class Budget extends MY_Controller {
 			parent::__construct();
 			$this->load->model('Salary_model');
 			$this->load->model('Invoices_model');
+			$this->load->model('Staff_model');
 	}
 	public function index(){
 		$salary;
@@ -62,6 +63,47 @@ class Budget extends MY_Controller {
 			}
 		//var_dump($this->data['expenses']);die;
 				$this->data['tempcon'] = 'budget/index.php';
+				$this->data['temp'] = 'main.php';
+				$this->load->view('index',$this->data);
+	}
+	public function salaryAndInsurance(){
+		$this->data['staff'] = $this->Staff_model->get_list();
+		if(isset($_GET) && $_GET != null){			
+			if($_GET['dateselect'] != null){				
+				$wheredate = ''.$_GET['dateselect'].'-%';
+			}
+			else{
+				$wheredate = ''.date("Y").'-%';
+				$this->session->set_flashdata('message', 'Bạn chưa chọn ngày');
+				$message = $this->session->flashdata('message');
+				$this->data['message'] = $message;
+			}
+		}
+		else{
+			$wheredate = ''.date("Y").'-%';
+		}
+		for($i=1;$i<13;$i++){
+				foreach($this->data['staff'] as $row0){					
+					$input['where'] = array('id_staff' => $row0->id ,'sna_salary.date LIKE' => $wheredate );
+					$salary = $this->Salary_model->get_list($input);
+					foreach($salary as $row){
+					//get month from date string.	
+						$tam = $this->_getMonth($row->date);
+						if($tam == $i){
+							$row0->$i = $row->salary;
+						}
+					}
+					//if does not exist salary[$i] will new salary[$i] = emptry
+					if(!isset($row0->$i))
+						$row0->$i = '';
+				}
+				//if does not exist salary[$i] will new salary[$i] = emptry
+				if(!isset($this->data['salary'][$i]))
+					$this->data['salary'][$i] = 0;
+
+			}
+		//var_dump($this->data['staff'][0]->{10});die;
+				$this->data['tempcon'] = 'budget/salary.php';
 				$this->data['temp'] = 'main.php';
 				$this->load->view('index',$this->data);
 	}

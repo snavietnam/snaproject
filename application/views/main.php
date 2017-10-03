@@ -59,8 +59,9 @@
             <a id="panel4" href="javascript:;" data-toggle="collapse" data-target="#clipboard"> <i class="fa fa-bar-chart"></i> Budget
               <i class="fa fa fa-chevron-left pull-right" id="arow4"></i> </a>
             <ul class="collapse nav" id="clipboard">
+              <li> <a href="budget/"><i class="fa fa-angle-double-right"></i> Budget</a> </li>
               <li> <a href="budget/expenses"><i class="fa fa-angle-double-right"></i> Expenses</a> </li>
-              <li> <a href="#"><i class="fa fa-angle-double-right"></i> Salary & Insurance</a> </li>
+              <li> <a href="budget/salaryandinsurance/"><i class="fa fa-angle-double-right"></i> Salary & Insurance</a> </li>
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li>
               
             </ul>
