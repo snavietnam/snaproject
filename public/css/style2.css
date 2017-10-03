@@ -66,6 +66,9 @@ body {
 .layout-top-nav .main-footer {
   margin-left: 0;
 }
+.users-list img{width:128px; height:128px}
+.chart-legend{
+	font-size:12px}
 @media (max-width: 767px) {
   .content-wrapper,
   .main-footer {
@@ -2052,11 +2055,13 @@ a:focus {
   line-height: 90px;
   background: rgba(0, 0, 0, 0.2);
 }
+.info-box-icon i{
+	font-size:28px}
 .info-box-icon > img {
   max-width: 100%;
 }
 .info-box-content {
-  padding: 5px 10px;
+  padding: 24px 10px;
   margin-left: 90px;
 }
 .info-box-number {
@@ -4383,7 +4388,7 @@ table.text-center th {
   font-size: 16px;
 }
 .description-block > .description-text {
-  text-transform: uppercase;
+  text-transform:none
 }
 .bg-red,
 .bg-yellow,
