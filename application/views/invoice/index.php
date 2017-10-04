@@ -28,12 +28,12 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>Invoices list</h2>
-						<em>the first Invoices information</em>
+						<h2>Invoice list</h2>
+						<em>Input/ Output Invoice information</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
-						<a href="invoice/add"><button type="button" class="btn btn-block btn-info btn-sm">Add invoice</button></a>
+						<a href="invoice/add"><button type="button" class="btn btn-block btn-info btn-sm">ADD INVOICE</button></a>
 						</div>
 					</div>
 					<script>
@@ -50,7 +50,6 @@
 			<div class="row">
 				 <div class="box">
 				<div class="box-header">
-				  <h3 class="box-title">Data Table With invoice information</h3>
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">
