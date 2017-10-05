@@ -67,10 +67,11 @@
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">
-				  <table id="example2" class="table table-bordered table-striped">
+				  <table id="example2" class="table table-bordered">
 					<thead>
 					<tr>
-					  <th></th>
+					  <th>No.</th>
+					  <th>Expenses Type</th>
 					  <th>Jan</th>
 					  <th>Feb</th>
 					  <th>Mar</th>
@@ -86,44 +87,51 @@
 					  <th>Total(1 year)</th>
 					</tr>
 					</thead>
-					<?php $total =0;$year =0;$totalyear =0; ?>
 					<tbody>
-					<?php  foreach($staff as $row){ $year = 0; ?>					
-					<tr>
-					  <td><?php echo $row->name ?></td>
-					  <td><?php echo number_format(intval($row->{1})) ?></td>
-					  <td><?php echo number_format(intval($row->{2})) ?></td>
-					  <td><?php echo number_format(intval($row->{3})) ?></td>
-					  <td><?php echo number_format(intval($row->{4})) ?></td>
-					  <td><?php echo number_format(intval($row->{5})) ?></td>
-					  <td><?php echo number_format(intval($row->{6})) ?></td>
-					  <td><?php echo number_format(intval($row->{7})) ?></td>
-					  <td><?php echo number_format(intval($row->{8})) ?></td>
-					  <td><?php echo number_format(intval($row->{9})) ?></td>
-					  <td><?php echo number_format(intval($row->{10})) ?></td>
-					  <td><?php echo number_format(intval($row->{11})) ?></td>
-					  <td><?php echo number_format(intval($row->{12})) ?></td>
-					  <?php  for($i=1;$i<13;$i++){ $year += $row->{$i};} $totalyear += $year;?>
-						<th><?php echo  number_format($year) ?></th>
-					</tr>
-					 <?php } ?>
+					<?php  foreach($category as $row){ $flag = true;?>
+						<?php foreach($row->type as $row1){ ?>
+						<tr>
+							<?php if($flag == true) echo '<th rowspan="'.$row->countrow.'">'.$row->name.'</th>' ?>							
+							<td><?php echo $row1->name ?></td>
+							<td><?php echo number_format(intval($row1->{1})) ?></td>
+							<td><?php echo number_format(intval($row1->{2})) ?></td>
+							<td><?php echo number_format(intval($row1->{3})) ?></td>
+							<td><?php echo number_format(intval($row1->{4})) ?></td>
+							<td><?php echo number_format(intval($row1->{5})) ?></td>
+							<td><?php echo number_format(intval($row1->{6})) ?></td>
+							<td><?php echo number_format(intval($row1->{7})) ?></td>
+							<td><?php echo number_format(intval($row1->{8})) ?></td>
+							<td><?php echo number_format(intval($row1->{9})) ?></td>
+							<td><?php echo number_format(intval($row1->{10})) ?></td>
+							<td><?php echo number_format(intval($row1->{11})) ?></td>
+							<td><?php echo number_format(intval($row1->{12})) ?></td>
+							<th><?php echo number_format(intval($row1->{1})+intval($row1->{2})+intval($row1->{3})+intval($row1->{4})+intval($row1->{5})+intval($row1->{6})+intval($row1->{7})+intval($row1->{8})+intval($row1->{9})+intval($row1->{10})+intval($row1->{11})+intval($row1->{12})) ?></th>
+						</tr>
+						<?php $flag = false; } ?>
+					<?php } ?>
 					</tbody>
 					<tfoot>
 					<tr>
-					  <th>TOTAL (VND)</th>
-					 <?php  for($i=1;$i<13;$i++){ $total = 0; ?>
-					   <?php  foreach($staff as $row){ $total += $row->{$i} ;}  ?>
-						<th><?php echo  number_format($total) ?></th>
+					  <th colspan="2">TOTAL (VND)</th>
+					<?php  for($i=1;$i<13;$i++){ $total = 0; ?>
+					<?php  foreach($category as $row){ ?>
+					<?php foreach($row->type as $row1){  
+						$total += $row1->{$i};					
+					}}
+					?>	
+					<th><?php echo  number_format($total); ?></th>
 					<?php } ?>
-						<th><?php echo  number_format($totalyear) ?></th>
 					</tr>
 					<tr>
-					  <th>TOTAL (USD)</th>
-					  <?php  for($i=1;$i<13;$i++){ $total = 0; ?>
-					   <?php  foreach($staff as $row){ $total += $row->{$i} ;}  ?>
-						<th><?php echo  number_format($total/22600) ?></th>
+					  <th colspan="2">TOTAL (USD)</th>
+					<?php  for($i=1;$i<13;$i++){ $total = 0; ?>
+					<?php  foreach($category as $row){ ?>
+					<?php foreach($row->type as $row1){  
+						$total += $row1->{$i};					
+					}}
+					?>	
+					<th><?php echo  number_format($total/26000) ?></th>
 					<?php } ?>
-						<th><?php echo  number_format($totalyear/22600) ?></th>
 					</tr>
 					</tfoot>
 				  </table>
@@ -132,15 +140,5 @@
 			</div>    
         </div>
 		<script>
-	  $(function () {
-		$('#example1').DataTable()
-		$('#example2').DataTable({
-		  'paging'      : false,
-		  'lengthChange': true,
-		  'searching'   : true,
-		  'ordering'    : true,
-		  'info'        : false,
-		  'autoWidth'   : true
-		})
-	  })
+	  
 	</script>

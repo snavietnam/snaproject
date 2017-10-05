@@ -6,6 +6,8 @@ class Budget extends MY_Controller {
 			$this->load->model('Salary_model');
 			$this->load->model('Invoices_model');
 			$this->load->model('Staff_model');
+			$this->load->model('Expenses_category_model');
+			$this->load->model('Expenses_type_model');
 	}
 	public function index(){
 		$salary;
@@ -104,6 +106,65 @@ class Budget extends MY_Controller {
 			}
 		//var_dump($this->data['staff'][0]->{10});die;
 				$this->data['tempcon'] = 'budget/salary.php';
+				$this->data['temp'] = 'main.php';
+				$this->load->view('index',$this->data);
+	}
+	public function expenses(){
+		$input['order'] = array('id','ASC');
+		$this->data['category'] = $this->Expenses_category_model->get_list($input);
+		if(isset($_GET) && $_GET != null){			
+			if($_GET['dateselect'] != null){				
+				$wheredate = ''.$_GET['dateselect'].'-%';
+			}
+			else{
+				$wheredate = ''.date("Y").'-%';
+				$this->session->set_flashdata('message', 'Bạn chưa chọn ngày');
+				$message = $this->session->flashdata('message');
+				$this->data['message'] = $message;
+			}
+		}
+		else{
+			$wheredate = ''.date("Y").'-%';
+		}
+				foreach($this->data['category'] as $row0){					
+					$input['where'] = array('id_category' => $row0->id);
+					$type = $this->Expenses_type_model->get_list($input);
+					$row0->type = $type;
+					$row0->countrow = count($type);
+					foreach($row0->type as $row){
+						$input['where'] = array('id_detail' => $row->id ,'sna_invoices.paymentdate LIKE' => $wheredate );
+						$invoice = $this->Invoices_model->get_list($input);
+						if($invoice != null){
+						foreach($invoice as $row1){
+						//get month from date string.	
+						$tam = $this->_getMonth($row1->paymentdate);						
+						for($i=1;$i<13;$i++){
+							if($tam == $i){
+								if(!isset($row->$i))
+									$row->$i = $row1->moneyafteravt;
+								else
+									$row->$i += $row1->moneyafteravt;
+							}
+							if(!isset($row->$i))
+								$row->$i = '';
+						}
+						}
+						}
+						else{
+							for($i=1;$i<13;$i++){
+							if(!isset($row->$i))
+								$row->$i = '';
+							}
+						}
+					}
+					
+				}
+	//var_dump($this->data['category'][2]->type);die;
+				//if does not exist salary[$i] will new salary[$i] = emptry
+				if(!isset($this->data['salary'][$i]))
+					$this->data['salary'][$i] = 0;
+			//var_dump($this->data['category']);die;
+				$this->data['tempcon'] = 'budget/expenses.php';
 				$this->data['temp'] = 'main.php';
 				$this->load->view('index',$this->data);
 	}
