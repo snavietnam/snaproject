@@ -1,8 +1,8 @@
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="#"> Staff</a></li>
-						<li class="active">Staff List</li>
+						<li><i class="fa fa-home"></i><a href="#"> Employee & Department</a></li>
+						<li class="active">Salary Table</li>
 					</ul>
             </div>
             <div class="col-md-8">
@@ -27,8 +27,8 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>STAFF LIST</h2>
-						<em>the first staff information</em>
+						<h2>SALARY TABLE</h2>
+						<em>Update salary table </em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
@@ -46,7 +46,7 @@
 					<div class="col-lg-offset-1 col-lg-10">
 						<div class="box box-warning">
 						<div class="box-header with-border">
-						  <h3 class="box-title">update salary (<?php echo $dateselect ?>)</h3>
+						  <h3 class="box-title">Update salary (<?php echo $dateselect ?>)</h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
@@ -65,7 +65,7 @@
 							<div class="form-group">
 							  <a href="salarylist/"><button class="btn btn-primary" type="button">Cancel</button></a>
 							  <button class="btn btn-primary" type="reset">Reset</button>
-							  <button type="submit" class="btn btn-success">Updates</button>
+							  <button type="submit" class="btn btn-success">Save</button>
 							</div>
 							</div>
 						  </form>

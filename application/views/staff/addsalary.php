@@ -1,8 +1,8 @@
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="#"> Staff</a></li>
-						<li class="active">Staff List</li>
+						<li><i class="fa fa-home"></i><a href="#"> Employee & Department</a></li>
+						<li class="active">Salary Table</li>
 					</ul>
             </div>
             <div class="col-md-8">
@@ -27,8 +27,8 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>STAFF LIST</h2>
-						<em>the first staff information</em>
+						<h2>SALARY TABLE</h2>
+						<em>Add salary information by month	</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
@@ -55,7 +55,7 @@
 							<div class="col-lg-4">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> <?php  echo  $row->name ?></label>
+							  <label class="control-label" for="inputSuccess"> <?php  echo  $row->name ?></label>
 							  <input type="text" class="form-control" name="name[]"  id="inputSuccess" required="required" placeholder="Enter ..." >
 							  <input type="hidden" class="form-control" name="id[]" value="<?php echo  $row->id ?>" id="inputSuccess"  placeholder="Enter ..." >
 							</div>

@@ -112,6 +112,10 @@
 							  <input type="text" class="form-control" name="address" value="<?php echo $detail->address?>" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
                             <div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess"> Tel</label>
+							  <input type="text" class="form-control" name="phone" value="<?php echo $detail->phone ?>" id="inputSuccess" required="required" placeholder="Enter ..." >
+							</div>
+                            <div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"> Tax Code</label>
 							  <input type="number" class="form-control" name="tax_code" value="<?php echo $detail->tax_code ?>" id="tax_code" required="required" placeholder="Enter ..." >
 							</div>
@@ -122,7 +126,7 @@
 							
 							<div class="col-lg-4 no-padding">
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"> Payment date</label>
+							  <label class="control-label" for="inputSuccess"> Payment Date</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
@@ -134,7 +138,7 @@
 							</div>
 							<div class="col-lg-4">
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"> Invoice date</label>
+							  <label class="control-label" for="inputSuccess"> Invoice Date</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
@@ -146,7 +150,7 @@
 							</div>
 							<div class="col-lg-4 no-padding">
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"> Received date</label>
+							  <label class="control-label" for="inputSuccess"> Received Date</label>
 							  <div class="input-group">
 								  <div class="input-group-addon">
 									<i class="fa fa-calendar"></i>
@@ -159,7 +163,7 @@
 							
 							<div class="col-lg-7 no-padding">
 								<div class="form-group has-warning">
-								  <label class="control-label" for="inputWarning"><i class="fa fa-bell-o"></i> Total amount</label>
+								  <label class="control-label" for="inputWarning"> Total Amount</label>
 								  <input type="text" name="money" class="form-control" name="money" value="<?php echo $detail->money ?>" id="money" placeholder="Enter ...">
 								  
 								</div>
@@ -183,12 +187,12 @@
 							</script>
 							<div class="col-lg-3 no-padding">
 								<div class="form-group has-error">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Total payment </label>
+							  <label class="control-label" for="inputSuccess"> Total Payment </label>
 							  <input type="text" class="form-control" name="tel" id="moneyvat" required="required" placeholder="Enter ..." disabled >
 							</div>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Payment method </label>
+							  <label class="control-label" for="inputSuccess"> Payment Method </label>
 								  <select name="paymentmethod"  class="form-control">									
 									<?php foreach($method as $row){ ?>
 										<option value="<?php echo $row->id ?>" <?php if($row->id == $detail->paymentmethod) echo 'selected' ?>><?php echo $row->name ?></option>
@@ -196,10 +200,7 @@
 									
 								  </select>
 							</div>
-							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> tel</label>
-							  <input type="text" class="form-control" name="phone" value="<?php echo $detail->phone ?>" id="inputSuccess" required="required" placeholder="Enter ..." >
-							</div>
+							
 							<div class="form-group">
 							  <label>Remark</label>
 							  <textarea name="description" class="form-control" rows="3" placeholder="Enter ..."><?php echo $detail->description ?></textarea>

@@ -49,7 +49,7 @@
 							<button id="send" type="submit" name="submit" value="add" class="btn btn-default btn-block">Input</button>
 							</div>
 							<div class="col-lg-4 no-padding">
-							<button id="send" type="submit" name="submit" value="edit" class="btn btn-default btn-block">updates</button>
+							<button id="send" type="submit" name="submit" value="edit" class="btn btn-default btn-block">Update</button>
 							</div>
 						</div>
 					</form>
