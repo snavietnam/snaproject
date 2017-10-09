@@ -208,7 +208,7 @@
 							<div class="form-group">
 							  <a href="invoice/"><button class="btn btn-primary" type="button">Cancel</button></a>
 							  <button class="btn btn-primary" type="reset">Reset</button>
-							  <button type="submit" class="btn btn-success">updates</button>
+							  <button type="submit" class="btn btn-success">Save</button>
 							</div>
 						  </form>
 						</div>
