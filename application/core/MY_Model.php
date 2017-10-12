@@ -108,14 +108,14 @@ class MY_Model extends CI_Model {
 	 */
 	function del_rule($where)
 	{
+		
 		if (!$where)
 		{
 			return FALSE;
 		}
 		
-	 	$this->db->where($where);
+	 	$this->get_list_set_input($where);
 		$this->db->delete($this->table);
-	 
 		return TRUE;
 	}
 	
@@ -159,6 +159,7 @@ class MY_Model extends CI_Model {
 	    }
 		$this->get_list_set_input($where);
 		$query = $this->db->get($this->table);
+		//var_dump($this->db->last_query());die;
 		if ($query->num_rows())
 		{
 			return $query->result_array();

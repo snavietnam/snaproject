@@ -8,18 +8,21 @@ class Salarylist extends MY_Controller {
 	}
 	public function index()
 	{
-		
+		if($this->data['idBranch'] != 0)
+			$branch = $this->data['idBranch'];
+		else
+			$branch = '';
 		if(isset($_GET) && $_GET != null){
 			
 			if($_GET['dateselect'] != null){
 				switch($_GET['submit']){
 				case 'select':
-					$input['where'] = array('sna_salary.date LIKE' => ''.$_GET["dateselect"].'-%');
+					$input['where'] = array('sna_staff.id_branch' => $branch,'sna_salary.date LIKE' => ''.$_GET["dateselect"].'-%');
 					$this->data['liststaff'] = $this->Staff_model->get_list_form_more_table($input,'sna_salary','id_staff');
 					$this->data['tempcon'] = 'staff/salarylist.php';
 					break;
 				case 'add':
-					$input['where'] = array('date LIKE' => ''.$_GET["dateselect"].'-%');
+					$input['where'] = array('sna_staff.id_branch' => $branch,'date LIKE' => ''.$_GET["dateselect"].'-%');
 					$total = $this->Salary_model->get_total($input);
 					if($total >= 1){
 						$this->session->set_flashdata('message', 'lương tháng này đả được thêm');
@@ -35,7 +38,7 @@ class Salarylist extends MY_Controller {
 					}
 				break;
 				case 'edit':
-					$input['where'] = array('sna_salary.date LIKE' => ''.$_GET["dateselect"].'-%');
+					$input['where'] = array('sna_staff.id_branch' => $branch,'sna_salary.date LIKE' => ''.$_GET["dateselect"].'-%');
 					$this->data['liststaff'] = $this->Staff_model->get_list_form_more_table($input,'sna_salary','id_staff');
 					$this->data['dateselect'] = $_GET["dateselect"];
 					$this->data['tempcon'] = 'staff/editsalary.php';
@@ -43,7 +46,7 @@ class Salarylist extends MY_Controller {
 				}
 			}
 			else{
-				 $input['where'] = array('sna_salary.date LIKE' => ''.date("Y-m").'-%');
+				 $input['where'] = array('sna_staff.id_branch' => $branch,'sna_salary.date LIKE' => ''.date("Y-m").'-%');
 				 $this->data['liststaff'] = $this->Staff_model->get_list_form_more_table($input,'sna_salary','id_staff');
 				 $this->session->set_flashdata('message', 'Bạn chưa chọn ngày');
 				 $this->data['tempcon'] = 'staff/salarylist.php';
@@ -53,7 +56,7 @@ class Salarylist extends MY_Controller {
 		}
 		else{ 
 			
-			$input['where'] = array('sna_salary.date LIKE' => ''.date("Y-m").'-%');
+			$input['where'] = array('sna_staff.id_branch' => $branch,'sna_salary.date LIKE' => ''.date("Y-m").'-%');
 			$this->data['liststaff'] = $this->Staff_model->get_list_form_more_table($input,'sna_salary','id_staff');
 			$this->data['tempcon'] = 'staff/salarylist.php';
 		}

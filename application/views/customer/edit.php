@@ -55,13 +55,8 @@
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" value="<?php echo $customerdetail->name ?>" required="required" placeholder="Enter ..." >
 							</div>
-<<<<<<< HEAD
-							<div class="form-group has-success">							 
-							  <label class="control-label" for="inputSuccess">Customer type</label>
-=======
 							<div class="form-group has-success">
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Customer type</label>
->>>>>>> 9be0eac091285fc5b258bc5504adedd973414f5d
 							  <select name="id_type" id="companyselect" class="form-control">
 									<option value="">Select...</option>
 									<?php foreach($customertype as $row){ ?>				 
@@ -70,12 +65,7 @@
 							  </select>
 							</div>
 							<div class="form-group has-success">
-<<<<<<< HEAD
-							  <label class="control-label" for="inputSuccess"> Address</label>
-
-=======
 							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Address</label>
->>>>>>> 9be0eac091285fc5b258bc5504adedd973414f5d
 							  <input type="text" class="form-control" name="address" id="inputSuccess" value="<?php echo $customerdetail->address ?>" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">

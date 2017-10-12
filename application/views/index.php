@@ -54,7 +54,7 @@
   </nav>
   <!--    top nav end===========-->
   <!-- DataTables -->
-   <script src="<?php echo public_url() ?>js/jquery-1.10.1.min.js"></script>
+   <script src="<?php echo public_url() ?>js/jquery.js"></script>
 	<script src="<?php echo public_url() ?>js/jquery.dataTables.js"></script>
 	<script src="<?php echo public_url() ?>js/dataTables.bootstrap.js"></script>
 	<script src="<?php echo public_url() ?>js/bootstrap-datepicker.js"></script>

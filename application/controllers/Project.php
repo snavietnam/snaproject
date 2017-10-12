@@ -9,18 +9,24 @@ class Project extends MY_Controller {
 	public function index()
 	{
 		$message = $this->session->flashdata('message');
-		// if($message != ''){
-			// var_dump($message);die;
-		// }
+		/* set id_branch for object */
+		if($this->data['idBranch'] != 0)
+			$input['where'] = array('id_branch' => $this->data['idBranch']);
+		else
+			$input['where'] = array();
         $this->data['message'] = $message;
 		
-		$this->data['listcustomer'] = $this->Project_model->get_list();
+		$this->data['listcustomer'] = $this->Project_model->get_list($input);
 		$this->data['temp'] = 'main.php';
 		$this->data['tempcon'] = 'project/index.php';
 		$this->load->view('index',$this->data);
 	}
 	public function add(){
-		$input['where'] = array('id_type' =>1);
+		/* set id_branch for object */
+		if($this->data['idBranch'] != 0)
+			$input['where'] = array('id_branch' => $this->data['idBranch'],'id_type' =>1);
+		else
+			$input['where'] = array('id_type' =>1);
 		$this->data['customerlist'] = $this->Customer_model->get_list($input);
 		     
         //neu ma co du lieu post len thi kiem tra

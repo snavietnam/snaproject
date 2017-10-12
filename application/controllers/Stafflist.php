@@ -10,11 +10,13 @@ class Stafflist extends MY_Controller {
 	public function index()
 	{
 		$message = $this->session->flashdata('message'); 
-		// if($message != ''){
-			// var_dump($message);die;
-		// }
+				/* set id_branch for object */
+		if($this->data['idBranch'] != 0)
+			$input['where'] = array('id_branch' => $this->data['idBranch']);
+		else
+			$input['where'] = array();
         $this->data['message'] = $message;
-		$this->data['liststaff'] = $this->Staff_model->get_list();
+		$this->data['liststaff'] = $this->Staff_model->get_list($input);
 		$this->data['temp'] = 'main.php';
 		$this->data['tempcon'] = 'staff/stafflist.php';
 		$this->load->view('index',$this->data);
@@ -44,7 +46,8 @@ class Stafflist extends MY_Controller {
                     'tax_identification_no' 	=> $this->input->post('tax_identification_no'),					
                     'insurance_premiums' 	=> $this->input->post('insurance_premiums'),					
                     'dependent_person' 	=> $this->input->post('dependent_person'),					
-                    'account_no' 	=> $this->input->post('account_no')
+                    'account_no' 	=> $this->input->post('account_no'),
+                    'id_branch' 	=> $this->data['idBranch']
                 ); 
                 //them moi vao csdl
                 if($this->Staff_model->create($data))
@@ -85,7 +88,8 @@ class Stafflist extends MY_Controller {
                     'tax_identification_no' 	=> $this->input->post('tax_identification_no'),					
                     'insurance_premiums' 	=> $this->input->post('insurance_premiums'),					
                     'dependent_person' 	=> $this->input->post('dependent_person'),					
-                    'account_no' 	=> $this->input->post('account_no')					
+                    'account_no' 	=> $this->input->post('account_no'),
+					'id_branch' 	=> $this->data['idBranch']
                 ); 
                 //them moi vao csdl
                 if($this->Staff_model->update($id,$data))

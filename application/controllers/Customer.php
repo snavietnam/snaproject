@@ -9,11 +9,13 @@ class Customer extends MY_Controller {
 	public function index()
 	{
 		$message = $this->session->flashdata('message');
-		// if($message != ''){
-			// var_dump($message);die;
-		// }
         $this->data['message'] = $message;
-		$this->data['listcustomer'] = $this->Customer_model->get_list();
+		/* set id_branch for object */
+		if($this->data['idBranch'] != 0)
+			$input['where'] = array('id_branch' => $this->data['idBranch']);
+		else
+			$input['where'] = array();
+		$this->data['listcustomer'] = $this->Customer_model->get_list($input);
 		$this->data['customertype'] = $this->Customer_type_model->get_list();
 		$this->data['temp'] = 'main.php';
 		$this->data['tempcon'] = 'customer/index.php';
@@ -30,6 +32,7 @@ class Customer extends MY_Controller {
                     'address'    => $this->input->post('address'),				
                     'tax_code'   => $this->input->post('tax_code'),				
                     'tel'        => $this->input->post('tel'),				
+                    'id_branch'        => $this->data['idBranch'],				
                 ); 
                 //them moi vao csdl
                 if($this->Customer_model->create($data))
@@ -58,6 +61,7 @@ class Customer extends MY_Controller {
 					'address'    => $this->input->post('address'),				
                     'tax_code'   => $this->input->post('tax_code'),				
                     'tel'        => $this->input->post('tel'),
+					'id_branch'  => $this->data['idBranch'],
                 ); 
                 //them moi vao csdl
                 if($this->Customer_model->update($id,$data))

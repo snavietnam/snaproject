@@ -1,8 +1,8 @@
 <div class="row">
             <div class="col-md-4">
             <ul class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="#"> Project</a></li>
-						<li class="active">Project List</li>
+						<li><i class="fa fa-home"></i><a href="#"> Customer</a></li>
+						<li class="active">Customer List</li>
 					</ul>
             </div>
             <div class="col-md-8">
@@ -27,8 +27,8 @@
             <div class="col-md-12">
                 <div class="main-header">
 					<div class="col-lg-6">
-						<h2>PROJECT LIST</h2>
-						<em>Add new project</em>
+						<h2>CUSTOMERS LIST</h2>
+						<em>Add new customer information</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
@@ -46,52 +46,44 @@
 					<div class="col-lg-offset-2 col-lg-8">
 						<div class="box box-warning">
 						<div class="box-header with-border">
-						  <h3 class="box-title">Add New Project</h3>
+						  <h3 class="box-title">Add New Customer</h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
 						  <form role="form" action="" method="POST">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Name</label>
+							  <label class="control-label" for="inputSuccess">Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label"><i class="fa fa-angle-right"></i> Customer</label>
-							  <select name="id_customer" class="form-control">
-							  <?php foreach($customerlist as $row){ ?>
-								<option value="<?php echo $row->id ?>"><?php echo $row->name ?></option>
-							  <?php } ?>
+							  <label class="control-label" for="inputSuccess">username</label>
+							  <input type="text" class="form-control" name="username" id="inputSuccess" required="required" placeholder="Enter ..." >
+							</div>
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess">password</label>
+							  <input type="password" class="form-control" name="password" id="inputSuccess" required="required" placeholder="Enter ..." >
+							</div>
+							<div class="form-group has-success">
+							  <label class="control-label" for="inputSuccess">Admin Group</label>
+							  <select name="group_id" id="companyselect" class="form-control">
+									<option value="">Select...</option>
+									<?php foreach($group as $row){ ?>				 
+											<option value="<?php echo $row->id ?>"><?php echo $row->name ?></option>
+									<?php } ?>
 							  </select>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Product</label>
-							  <input type="text" class="form-control" name="product" id="inputSuccess" required="required" placeholder="Enter ..." >
+							  <label class="control-label" for="inputSuccess">By Branch</label>
+							  <select name="id_branch" id="companyselect" class="form-control">
+									<option value="">Select...</option>
+									<?php foreach($listbranch as $row){ ?>				 
+											<option value="<?php echo $row->id ?>"><?php echo $row->name ?></option>
+									<?php } ?>
+							  </select>
 							</div>
-							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Payment Date</label>
-							  <input type="text" class="form-control" name="paymentdate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
-							  
-							</div>
-							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Start Date</label>
-							  <input type="text" class="form-control" name="startdate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
-							  
-							</div>
-							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> End date</label>
-							  <input type="text" class="form-control" name="enddate" id="inputSuccess" required="required"  data-inputmask="'alias': 'yyyy/mm/dd'" data-mask placeholder="Enter ...">
-							 
-							</div>
-							
-							<!-- textarea -->
-							<div class="form-group has-success">
-							  <label>Remark</label>
-							  <textarea class="form-control" rows="3" name="description" required="required" placeholder="Enter ..."></textarea>
-							</div>
-
 							<div class="form-group">
-							  <a href="project/"><button class="btn btn-primary" type="button">Cancel</button></a>
+							  <a href="account/"><button class="btn btn-primary" type="button">Cancel</button></a>
 							  <button class="btn btn-primary" type="reset">Reset</button>
 							  <button type="submit" class="btn btn-success">Create</button>
 							</div>
@@ -108,3 +100,4 @@
 				<!-- /.box-body -->
 			</div>    
         </div>
+		

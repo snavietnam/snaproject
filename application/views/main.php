@@ -80,11 +80,21 @@
               <i class="fa fa fa-chevron-left pull-right" id="arow7"></i> </a>
             <ul class="collapse nav" id="cogs">
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li></ul></li>
-              <li class="panel">
+           <li class="panel">
             <a id="panel8" href="javascript:;" data-toggle="collapse" data-target="#profit"> <i class="fa fa-money"></i> Profit
               <i class="fa fa fa-chevron-left pull-right" id="arow8"></i> </a>
             <ul class="collapse nav" id="profit">
               <li> <a href="#"><i class="fa fa-angle-double-right"></i> View Report</a> </li>
+              
+            </ul>
+          </li>
+		  <li class="panel">
+            <a id="panel9" href="javascript:;" data-toggle="collapse" data-target="#seting"> <i class="fa fa-gear"></i> Setting
+              <i class="fa fa fa-chevron-left pull-right" id="arow9"></i> </a>
+            <ul class="collapse nav" id="seting">
+              <li> <a href="account"><i class="fa fa-angle-double-right"></i> Account</a> </li>
+              <li> <a href="typeaccount"><i class="fa fa-angle-double-right"></i> type account</a> </li>
+              <li> <a href="#"><i class="fa fa-angle-double-right"></i> GhiLog</a> </li>
               
             </ul>
           </li>
