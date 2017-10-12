@@ -53,7 +53,7 @@
 						  <form role="form" action="department/edit/<?php echo $departmentdetail->id ?>" method="POST">
 							<!-- text input -->
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-angle-right"></i> Name</label>
+							  <label class="control-label" for="inputSuccess"> Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" value="<?php echo $departmentdetail->name ?>" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group">

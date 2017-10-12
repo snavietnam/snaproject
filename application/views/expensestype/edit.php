@@ -2,7 +2,7 @@
             <div class="col-md-4">
             <ul class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="#"> Expenses Type</a></li>
-						<li class="active">Expenses Type edit</li>
+						<li class="active">Edit Expense Type</li>
 					</ul>
             </div>
             <div class="col-md-8">
@@ -28,7 +28,7 @@
                 <div class="main-header">
 					<div class="col-lg-6">
 						<h2>EXPENSES LIST</h2>
-						<em>Expenses type edit</em>
+						<em>Edit Expense Type</em>
 					</div>
 					<div class="col-lg-6  align-right">
 						<div class="col-lg-6">
@@ -46,7 +46,7 @@
 					<div class="col-lg-offset-2 col-lg-8">
 						<div class="box box-warning">
 						<div class="box-header with-border">
-						  <h3 class="box-title">edit Expenses type</h3>
+						  <h3 class="box-title">Edit Expense Type</h3>
 						</div>
 						<!-- /.box-header -->
 						<div class="box-body">
@@ -61,13 +61,13 @@
 							  </select>
 							</div>
 							<div class="form-group has-success">
-							  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Name</label>
+							  <label class="control-label" for="inputSuccess"> Name</label>
 							  <input type="text" class="form-control" name="name" id="inputSuccess" value="<?php echo $typedetail->name ?>" required="required" placeholder="Enter ..." >
 							</div>
 							<div class="form-group">
 							  <a href="customer/"><button class="btn btn-primary" type="button">Cancel</button></a>
 							  <button class="btn btn-primary" type="reset">Reset</button>
-							  <button type="submit" class="btn btn-success">Create</button>
+							  <button type="submit" class="btn btn-success">Save</button>
 							</div>
 
 						  </form>
